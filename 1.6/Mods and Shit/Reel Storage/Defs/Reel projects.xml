@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+	<ResearchProjectDef>
+		<defName>Ferny_AnimalFeeder</defName>
+		<label>Animal feeder</label>
+		<description>Build a feeding recepticle to provide food for livestock.</description>
+		<baseCost>200</baseCost>
+		<techLevel>Neolithic</techLevel>
+		<researchViewX>24.00</researchViewX>
+		<researchViewY>3.00</researchViewY>
+		<prerequisites>
+			<li>Ferny_Shelves</li>
+		</prerequisites>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef>
+		<defName>Ferny_MeatHook</defName>
+		<label>Meat hook</label>
+		<description>Build meat hooks for hanging meat and corpses.</description>
+		<baseCost>250</baseCost>
+		<tab>Main</tab>
+		<techLevel>Medieval</techLevel>
+		<researchViewX>24.00</researchViewX>
+		<researchViewY>4.00</researchViewY>
+		<prerequisites>
+			<li MayRequire="sbz.neatstorage">Ferny_Pallets</li>
+		</prerequisites>
+	</ResearchProjectDef>
+
+</Defs>

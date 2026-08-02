@@ -14,9 +14,9 @@
 			<steamWorkshopUrl>steam://url/CommunityFilePage/3033901359</steamWorkshopUrl>
 		</li>
 		<li>
-			<packageId>ferny.propscore</packageId>
-			<displayName>More Prop Categories</displayName>
-			<steamWorkshopUrl>steam://url/CommunityFilePage/3167021055</steamWorkshopUrl>
+			<packageId>OskarPotocki.VanillaFactionsExpanded.Core</packageId>
+			<displayName>Vanilla Expanded Framework</displayName>
+			<steamWorkshopUrl>steam://url/CommunityFilePage/1854607105</steamWorkshopUrl>
 		</li>
 	</modDependencies>
 	<description>Integrates storage mods into Vanilla progression.</description>
@@ -26,11 +26,14 @@
 		<li>Ludeon.Rimworld.Ideology</li>
 		<li>Ludeon.Rimworld.Biotech</li>
 		<li>Ludeon.Rimworld.Anomaly</li>
+		<li>Ludeon.RimWorld.Odyssey</li>
 		<li>reel.expanded.storage</li>
 		<li>dankpyon.medieval.overhaul</li>
 		<li>ferny.progressionaesthetics</li>
+		<li>ferny.progressionfurniture</li>
 		<li>VanillaExpanded.Recycling</li>
 		<li>VanillaExpanded.VFECore</li>
+		<li>VanillaExpanded.VFEArt</li>
 		<li>ferny.propscore</li>
 		<li>ferny.fuckextfurniture</li>
 		<li>Adamas.VendingMachines</li>
@@ -42,5 +45,8 @@
 		<li>oskarpotocki.vfe.medieval2</li>
 		<li>jdgg.adaptive.cargoholds</li>
 		<li>sbz.gravshipstorage</li>
+		<li>eeg.moxasf</li>
+		<li>ponpeco.PFSF</li>
+		<li>ReBuild.COTR.DoorsAndCorners</li>
 	</loadAfter>
 </ModMetaData>

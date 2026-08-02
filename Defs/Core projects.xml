@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+	<ResearchProjectDef>
+		<defName>Ferny_Shelves</defName>
+		<label>Shelves</label>
+		<description>Build shelves to store items.</description>
+		<baseCost>400</baseCost>
+		<techLevel>Neolithic</techLevel>
+		<researchViewX>24.00</researchViewX>
+		<researchViewY>3.00</researchViewY>
+		<tags>
+			<li>ClassicStart</li>
+		</tags>
+		<prerequisites>
+			<li MayRequire="sbz.neatstorage">Ferny_Pallets</li>
+		</prerequisites>
+	</ResearchProjectDef>
+
+	<!-- <ResearchProjectDef>
+		<defName>Ferny_Bookcases</defName>
+		<label>Bookcases</label>
+		<description>Build bookcases to store books and other items.</description>
+		<baseCost>250</baseCost>
+		<techLevel>Neolithic</techLevel>
+		<researchViewX>24.00</researchViewX>
+		<researchViewY>3.00</researchViewY>
+		<prerequisites>
+			<li MayRequire="dankpyon.medieval.overhaul">DankPyon_Lumber</li>
+		</prerequisites>
+	</ResearchProjectDef> -->
+
+</Defs>

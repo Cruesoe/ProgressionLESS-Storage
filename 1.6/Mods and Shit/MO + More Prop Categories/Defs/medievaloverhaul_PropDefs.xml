@@ -518,4 +518,5 @@
     <prop>DankPyon_Stall_Bow</prop>
     <useMatsInsteadOfSilver>true</useMatsInsteadOfSilver>
 </VFEProps.PropDef>
+
 </Defs>

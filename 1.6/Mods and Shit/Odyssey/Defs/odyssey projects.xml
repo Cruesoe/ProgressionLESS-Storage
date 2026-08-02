@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ResearchProjectDef>
+		<defName>Ferny_OutfitStands</defName>
+		<label>outfit stands</label>
+		<description>Learn to build outfit stands for storing and displaying clothing sets.</description>
+		<baseCost>400</baseCost>
+		<techLevel>Neolithic</techLevel>
+		<researchViewX>25.00</researchViewX>
+		<researchViewY>7.00</researchViewY>
+		<prerequisites>
+			<li MayRequire="OskarPotocki.VFE.Tribals">VFET_Furniture</li>
+		</prerequisites>
+	</ResearchProjectDef>
+</Defs>

@@ -25,14 +25,28 @@
     <li IfModActive="silkcircuit.passitthroughthewindow">1.6/Mods and Shit/Pass It Through</li>
     <li IfModActive="sarg.alphabooks">1.6/Mods and Shit/Alpha Books</li>
     <li IfModActive="adaptive.primitivestorage">1.6/Mods and Shit/Adaptive Primitive Storage</li>
+    <li IfModActiveAll="adaptive.primitivestorage,VanillaExpanded.VFEArt">1.6/Mods and Shit/Primitive + VFE Art</li>
     <li IfModActive="sbz.neatstorage">1.6/Mods and Shit/Neat Storage</li>
     <li IfModActive="OskarPotocki.VFE.Mechanoid">1.6/Mods and Shit/VFE Mechanoids</li>
     <li IfModActive="oskarpotocki.vfe.medieval2">1.6/Mods and Shit/VFE Medieval 2</li>
     <li IfModActive="jdgg.adaptive.cargoholds">1.6/Mods and Shit/Cargo Holds</li>
     <li IfModActive="sbz.gravshipstorage">1.6/Mods and Shit/Gravship Storage</li>
 		<li IfModActive="sbz.NeatStorageFridge">1.6/Mods and Shit/SBZ Fridge</li>
-		<li IfModActive="sbz.NeatStorage,reel.expanded.storage">1.6/Mods and Shit/Neat Storage + Reel</li>
-		<li IfModActive="sbz.NeatStorageFridge,reel.expanded.storage">1.6/Mods and Shit/SBZ Fridge + Reel</li>
-
+		<li IfModActive="reel.expanded.storage">1.6/Mods and Shit/Reel Storage</li>
+		<li IfModActive="eeg.moxasf">1.6/Mods and Shit/MO Adaptive Storage</li>
+		<li IfModActive="Ludeon.RimWorld.Odyssey">1.6/Mods and Shit/Odyssey</li>
+		<li IfModActiveAll="sbz.NeatStorage,reel.expanded.storage">1.6/Mods and Shit/Neat Storage + Reel</li>
+		<li IfModActive="sbz.NeatStorageFridge">1.6/Mods and Shit/SBZ Fridge or Reel</li>
+		<li IfModActive="reel.expanded.storage" IfModNotActive="sbz.NeatStorageFridge">1.6/Mods and Shit/SBZ Fridge or Reel</li>
+		<li IfModActiveAll="sbz.NeatStorageFridge,reel.expanded.storage">1.6/Mods and Shit/SBZ Fridge + Reel</li>
+		<li IfModActiveAll="eeg.moxasf,adaptive.primitivestorage">1.6/Mods and Shit/MO Adaptive + Primitive</li>
+		<li IfModActiveAll="eeg.moxasf,reel.expanded.storage">1.6/Mods and Shit/MO Adaptive + Reel</li>
+		<li IfModActive="dankpyon.medieval.overhaul">1.6/Mods and Shit/MO or Reel</li>
+		<li IfModActive="reel.expanded.storage" IfModNotActive="dankpyon.medieval.overhaul">1.6/Mods and Shit/MO or Reel</li>
+		<li IfModActiveAll="dankpyon.medieval.overhaul,reel.expanded.storage">1.6/Mods and Shit/MO + Reel</li>
+		<li IfModActiveAll="dankpyon.medieval.overhaul,adaptive.primitivestorage">1.6/Mods and Shit/MO + Primitive</li>
+		<li IfModActiveAll="dankpyon.medieval.overhaul,ferny.propscore">1.6/Mods and Shit/MO + More Prop Categories</li>
+		<li IfModActive="ponpeco.PFSF">1.6/Mods and Shit/Ponpeco Furnitures Sci-Fi</li>
+		<li IfModActiveAll="ponpeco.PFSF,ReBuild.COTR.DoorsAndCorners">1.6/Mods and Shit/Ponpeco Furnitures Sci-Fi + ReBuild</li>
   </v1.6>
 </loadFolders>

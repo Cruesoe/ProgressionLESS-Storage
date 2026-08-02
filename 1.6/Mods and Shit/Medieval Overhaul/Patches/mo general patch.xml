@@ -2,34 +2,287 @@
 <Patch>
 
 
+<!-- July 5, 2026 -->
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>/Defs/ThingDef[defName="DankPyon_RusticChest"]/label</xpath>
+    <value>
+      <label>chest</label>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>/Defs/ThingDef[defName="DankPyon_MetalStrongbox"]/label</xpath>
+    <value>
+      <label>strongbox</label>
+    </value>
+  </Operation>
+
+
+    <Operation Class="PatchOperationConditional">
+        <success>Always</success>
+        <xpath>/Defs/ThingDef[defName="DankPyon_RusticChest"]/researchPrerequisites</xpath>
+        <match Class="PatchOperationReplace">
+            <xpath>/Defs/ThingDef[defName="DankPyon_RusticChest"]/researchPrerequisites</xpath>
+            <value>
+                <researchPrerequisites Inherit="false">
+                    <li>Ferny_Chest</li>
+                </researchPrerequisites>
+            </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="DankPyon_RusticChest"]</xpath>
+            <value>
+                <researchPrerequisites Inherit="false">
+                    <li>Ferny_Chest</li>
+                </researchPrerequisites>
+            </value>
+        </nomatch>
+    </Operation>
+
+    <Operation Class="PatchOperationConditional">
+        <success>Always</success>
+        <xpath>/Defs/ThingDef[defName="DankPyon_MetalStrongbox"]/researchPrerequisites</xpath>
+        <match Class="PatchOperationReplace">
+            <xpath>/Defs/ThingDef[defName="DankPyon_MetalStrongbox"]/researchPrerequisites</xpath>
+            <value>
+                <researchPrerequisites Inherit="false">
+                    <li>Ferny_Strongbox</li>
+                </researchPrerequisites>
+            </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="DankPyon_MetalStrongbox"]</xpath>
+            <value>
+                <researchPrerequisites Inherit="false">
+                    <li>Ferny_Strongbox</li>
+                </researchPrerequisites>
+            </value>
+        </nomatch>
+    </Operation>
+
+    <Operation Class="PatchOperationConditional">
+        <success>Always</success>
+        <xpath>/Defs/ThingDef[defName="DankPyon_RoyalChest"]/researchPrerequisites</xpath>
+        <match Class="PatchOperationReplace">
+            <xpath>/Defs/ThingDef[defName="DankPyon_RoyalChest"]/researchPrerequisites</xpath>
+            <value>
+                <researchPrerequisites Inherit="false">
+                    <li>Ferny_RoyalChest</li>
+                </researchPrerequisites>
+            </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="DankPyon_RoyalChest"]</xpath>
+            <value>
+                <researchPrerequisites Inherit="false">
+                    <li>Ferny_RoyalChest</li>
+                </researchPrerequisites>
+            </value>
+        </nomatch>
+    </Operation>
+
+
+
+
+
+
+
+
+
+
+
+<!-- MAY 24 2026, New research projects  -->
+
+    <Operation Class="PatchOperationConditional">
+        <success>Always</success>
+        <xpath>/Defs/ThingDef[defName="DankPyon_Crate1x1c"]/researchPrerequisites</xpath>
+        <match Class="PatchOperationReplace">
+            <xpath>/Defs/ThingDef[defName="DankPyon_Crate1x1c"]/researchPrerequisites</xpath>
+            <value>
+                <researchPrerequisites Inherit="false">
+                    <li>Ferny_Boxes</li>
+                </researchPrerequisites>
+            </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="DankPyon_Crate1x1c"]</xpath>
+            <value>
+                <researchPrerequisites Inherit="false">
+                    <li>Ferny_Boxes</li>
+                </researchPrerequisites>
+            </value>
+        </nomatch>
+    </Operation>
+
+    <Operation Class="PatchOperationConditional">
+        <success>Always</success>
+        <xpath>/Defs/ThingDef[defName="DankPyon_Crate1x2c"]/researchPrerequisites</xpath>
+        <match Class="PatchOperationReplace">
+            <xpath>/Defs/ThingDef[defName="DankPyon_Crate1x2c"]/researchPrerequisites</xpath>
+            <value>
+                <researchPrerequisites Inherit="false">
+                    <li>Ferny_Boxes</li>
+                </researchPrerequisites>
+            </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="DankPyon_Crate1x2c"]</xpath>
+            <value>
+                <researchPrerequisites Inherit="false">
+                    <li>Ferny_Boxes</li>
+                </researchPrerequisites>
+            </value>
+        </nomatch>
+    </Operation>
+
+    <Operation Class="PatchOperationConditional">
+        <success>Always</success>
+        <xpath>/Defs/ThingDef[defName="DankPyon_Crate2x2c"]/researchPrerequisites</xpath>
+        <match Class="PatchOperationReplace">
+            <xpath>/Defs/ThingDef[defName="DankPyon_Crate2x2c"]/researchPrerequisites</xpath>
+            <value>
+                <researchPrerequisites Inherit="false">
+                    <li>Ferny_Boxes</li>
+                </researchPrerequisites>
+            </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="DankPyon_Crate2x2c"]</xpath>
+            <value>
+                <researchPrerequisites Inherit="false">
+                    <li>Ferny_Boxes</li>
+                </researchPrerequisites>
+            </value>
+        </nomatch>
+    </Operation>
+
+    <Operation Class="PatchOperationConditional">
+        <success>Always</success>
+        <xpath>/Defs/ThingDef[defName="DankPyon_RusticBarrelClosed"]/researchPrerequisites</xpath>
+        <match Class="PatchOperationReplace">
+            <xpath>/Defs/ThingDef[defName="DankPyon_RusticBarrelClosed"]/researchPrerequisites</xpath>
+            <value>
+                <researchPrerequisites Inherit="false">
+                    <li>Ferny_Barrels</li>
+                </researchPrerequisites>
+            </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="DankPyon_RusticBarrelClosed"]</xpath>
+            <value>
+                <researchPrerequisites Inherit="false">
+                    <li>Ferny_Barrels</li>
+                </researchPrerequisites>
+            </value>
+        </nomatch>
+    </Operation>
+
+    <Operation Class="PatchOperationConditional">
+        <success>Always</success>
+        <xpath>/Defs/ThingDef[defName="DankPyon_RusticBarrelBigClosed"]/researchPrerequisites</xpath>
+        <match Class="PatchOperationReplace">
+            <xpath>/Defs/ThingDef[defName="DankPyon_RusticBarrelBigClosed"]/researchPrerequisites</xpath>
+            <value>
+                <researchPrerequisites Inherit="false">
+                    <li>Ferny_Barrels</li>
+                </researchPrerequisites>
+            </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="DankPyon_RusticBarrelBigClosed"]</xpath>
+            <value>
+                <researchPrerequisites Inherit="false">
+                    <li>Ferny_Barrels</li>
+                </researchPrerequisites>
+            </value>
+        </nomatch>
+    </Operation>
+
+    <Operation Class="PatchOperationConditional">
+        <success>Always</success>
+        <xpath>/Defs/ThingDef[defName="DankPyon_RusticBarrelBigClosedDown"]/researchPrerequisites</xpath>
+        <match Class="PatchOperationReplace">
+            <xpath>/Defs/ThingDef[defName="DankPyon_RusticBarrelBigClosedDown"]/researchPrerequisites</xpath>
+            <value>
+                <researchPrerequisites Inherit="false">
+                    <li>Ferny_Barrels</li>
+                </researchPrerequisites>
+            </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="DankPyon_RusticBarrelBigClosedDown"]</xpath>
+            <value>
+                <researchPrerequisites Inherit="false">
+                    <li>Ferny_Barrels</li>
+                </researchPrerequisites>
+            </value>
+        </nomatch>
+    </Operation>
+
+    <Operation Class="PatchOperationConditional">
+        <success>Always</success>
+        <xpath>/Defs/ThingDef[defName="DankPyon_RusticBarrelStack"]/researchPrerequisites</xpath>
+        <match Class="PatchOperationReplace">
+            <xpath>/Defs/ThingDef[defName="DankPyon_RusticBarrelStack"]/researchPrerequisites</xpath>
+            <value>
+                <researchPrerequisites Inherit="false">
+                    <li>Ferny_Barrels</li>
+                </researchPrerequisites>
+            </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="DankPyon_RusticBarrelStack"]</xpath>
+            <value>
+                <researchPrerequisites Inherit="false">
+                    <li>Ferny_Barrels</li>
+                </researchPrerequisites>
+            </value>
+        </nomatch>
+    </Operation>
+
 
 <!-- Base changes -->
 
-                <Operation Class="PatchOperationAdd">
-                <xpath>Defs/ThingDef[defName="DankPyon_RusticCupboardEmpty"]</xpath>
-                <value>
-                    <researchPrerequisites Inherit="false"/>
-                </value>
+                <Operation Class="PatchOperationConditional">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="DankPyon_RusticCupboardEmpty"]/researchPrerequisites</xpath>
+                    <match Class="PatchOperationReplace">
+                        <xpath>Defs/ThingDef[defName="DankPyon_RusticCupboardEmpty"]/researchPrerequisites</xpath>
+                        <value>
+                            <researchPrerequisites Inherit="false">
+                                <li>Ferny_Shelves</li>
+                            </researchPrerequisites>
+                        </value>
+                    </match>
+                    <nomatch Class="PatchOperationAdd">
+                        <xpath>Defs/ThingDef[defName="DankPyon_RusticCupboardEmpty"]</xpath>
+                        <value>
+                            <researchPrerequisites Inherit="false">
+                                <li>Ferny_Shelves</li>
+                            </researchPrerequisites>
+                        </value>
+                    </nomatch>
                 </Operation>
 
                 <Operation Class="PatchOperationAdd">
                 <xpath>Defs/ThingDef[defName="DankPyon_RusticCupboardBread"]</xpath>
                 <value>
-                    <researchPrerequisites Inherit="false"/>
+                    <researchPrerequisites Inherit="false"><li>Ferny_Shelves</li></researchPrerequisites>
                 </value>
                 </Operation>
 
                 <Operation Class="PatchOperationAdd">
                 <xpath>Defs/ThingDef[defName="DankPyon_RusticCupboardCheese"]</xpath>
                 <value>
-                    <researchPrerequisites Inherit="false"/>
+                    <researchPrerequisites Inherit="false"><li>Ferny_Shelves</li></researchPrerequisites>
                 </value>
                 </Operation>
 
                 <Operation Class="PatchOperationAdd">
                 <xpath>Defs/ThingDef[defName="DankPyon_RusticCupboardWine"]</xpath>
                 <value>
-                    <researchPrerequisites Inherit="false"/>
+                    <researchPrerequisites Inherit="false"><li>Ferny_Shelves</li></researchPrerequisites>
                 </value>
                 </Operation>
 
@@ -110,81 +363,137 @@
                 </value>
                 </Operation>
 
-                <Operation Class="PatchOperationAdd">
-                <xpath>Defs/ThingDef[defName="DankPyon_LargeShelfEmpty"]</xpath>
-                <value>
-                    <researchPrerequisites Inherit="false"/>
-                </value>
+                <Operation Class="PatchOperationConditional">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="DankPyon_LargeShelfEmpty"]/researchPrerequisites</xpath>
+                    <match Class="PatchOperationReplace">
+                        <xpath>Defs/ThingDef[defName="DankPyon_LargeShelfEmpty"]/researchPrerequisites</xpath>
+                        <value>
+                            <researchPrerequisites Inherit="false">
+                                <li>Ferny_Shelves</li>
+                            </researchPrerequisites>
+                        </value>
+                    </match>
+                    <nomatch Class="PatchOperationAdd">
+                        <xpath>Defs/ThingDef[defName="DankPyon_LargeShelfEmpty"]</xpath>
+                        <value>
+                            <researchPrerequisites Inherit="false">
+                                <li>Ferny_Shelves</li>
+                            </researchPrerequisites>
+                        </value>
+                    </nomatch>
                 </Operation>
 
                 <Operation Class="PatchOperationAdd">
                 <xpath>Defs/ThingDef[defName="DankPyon_LargeShelf_Bread"]</xpath>
                 <value>
-                    <researchPrerequisites Inherit="false"/>
+                    <researchPrerequisites Inherit="false"><li>Ferny_Shelves</li></researchPrerequisites>
                 </value>
                 </Operation>
 
                 <Operation Class="PatchOperationAdd">
                 <xpath>Defs/ThingDef[defName="DankPyon_LargeShelf_Grain"]</xpath>
                 <value>
-                    <researchPrerequisites Inherit="false"/>
+                    <researchPrerequisites Inherit="false"><li>Ferny_Shelves</li></researchPrerequisites>
                 </value>
                 </Operation>
 
                 <Operation Class="PatchOperationAdd">
                 <xpath>Defs/ThingDef[defName="DankPyon_Large_Meat_Shelf"]</xpath>
                 <value>
-                    <researchPrerequisites Inherit="false"/>
+                    <researchPrerequisites Inherit="false"><li>Ferny_Shelves</li></researchPrerequisites>
                 </value>
                 </Operation>
 
                 <Operation Class="PatchOperationAdd">
                 <xpath>Defs/ThingDef[defName="DankPyon_LargeShelf_Cheese"]</xpath>
                 <value>
-                    <researchPrerequisites Inherit="false"/>
+                    <researchPrerequisites Inherit="false"><li>Ferny_Shelves</li></researchPrerequisites>
                 </value>
                 </Operation>
 
                 <Operation Class="PatchOperationAdd">
                 <xpath>Defs/ThingDef[defName="DankPyon_LargeShelf_Wine"]</xpath>
                 <value>
-                    <researchPrerequisites Inherit="false"/>
+                    <researchPrerequisites Inherit="false"><li>Ferny_Shelves</li></researchPrerequisites>
                 </value>
                 </Operation>
 
                 <Operation Class="PatchOperationAdd">
                 <xpath>Defs/ThingDef[defName="DankPyon_LargeShelf_Mead"]</xpath>
                 <value>
-                    <researchPrerequisites Inherit="false"/>
+                    <researchPrerequisites Inherit="false"><li>Ferny_Shelves</li></researchPrerequisites>
                 </value>
                 </Operation>
 
                 <Operation Class="PatchOperationAdd">
                 <xpath>Defs/ThingDef[defName="DankPyon_LargeShelf_Vegetables"]</xpath>
                 <value>
-                    <researchPrerequisites Inherit="false"/>
+                    <researchPrerequisites Inherit="false"><li>Ferny_Shelves</li></researchPrerequisites>
                 </value>
                 </Operation>
 
-                <Operation Class="PatchOperationAdd">
-                <xpath>Defs/ThingDef[defName="DankPyon_Crate2x2_Bones"]</xpath>
-                <value>
-                    <researchPrerequisites Inherit="false"/>
-                </value>
+                <Operation Class="PatchOperationConditional">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="DankPyon_Crate2x2_Bones"]/researchPrerequisites</xpath>
+                    <match Class="PatchOperationReplace">
+                        <xpath>Defs/ThingDef[defName="DankPyon_Crate2x2_Bones"]/researchPrerequisites</xpath>
+                        <value>
+                            <researchPrerequisites Inherit="false">
+                                <li>Ferny_Boxes</li>
+                            </researchPrerequisites>
+                        </value>
+                    </match>
+                    <nomatch Class="PatchOperationAdd">
+                        <xpath>Defs/ThingDef[defName="DankPyon_Crate2x2_Bones"]</xpath>
+                        <value>
+                            <researchPrerequisites Inherit="false">
+                                <li>Ferny_Boxes</li>
+                            </researchPrerequisites>
+                        </value>
+                    </nomatch>
                 </Operation>
 
-                <Operation Class="PatchOperationAdd">
-                <xpath>Defs/ThingDef[defName="DankPyon_Crate2x2_Unhold"]</xpath>
-                <value>
-                    <researchPrerequisites Inherit="false"/>
-                </value>
+                <Operation Class="PatchOperationConditional">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="DankPyon_Crate2x2_Unhold"]/researchPrerequisites</xpath>
+                    <match Class="PatchOperationReplace">
+                        <xpath>Defs/ThingDef[defName="DankPyon_Crate2x2_Unhold"]/researchPrerequisites</xpath>
+                        <value>
+                            <researchPrerequisites Inherit="false">
+                                <li>Ferny_Boxes</li>
+                            </researchPrerequisites>
+                        </value>
+                    </match>
+                    <nomatch Class="PatchOperationAdd">
+                        <xpath>Defs/ThingDef[defName="DankPyon_Crate2x2_Unhold"]</xpath>
+                        <value>
+                            <researchPrerequisites Inherit="false">
+                                <li>Ferny_Boxes</li>
+                            </researchPrerequisites>
+                        </value>
+                    </nomatch>
                 </Operation>
 
-                <Operation Class="PatchOperationAdd">
-                <xpath>Defs/ThingDef[defName="DankPyon_Crate2x2_Lindwurm"]</xpath>
-                <value>
-                    <researchPrerequisites Inherit="false"/>
-                </value>
+                <Operation Class="PatchOperationConditional">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="DankPyon_Crate2x2_Lindwurm"]/researchPrerequisites</xpath>
+                    <match Class="PatchOperationReplace">
+                        <xpath>Defs/ThingDef[defName="DankPyon_Crate2x2_Lindwurm"]/researchPrerequisites</xpath>
+                        <value>
+                            <researchPrerequisites Inherit="false">
+                                <li>Ferny_Boxes</li>
+                            </researchPrerequisites>
+                        </value>
+                    </match>
+                    <nomatch Class="PatchOperationAdd">
+                        <xpath>Defs/ThingDef[defName="DankPyon_Crate2x2_Lindwurm"]</xpath>
+                        <value>
+                            <researchPrerequisites Inherit="false">
+                                <li>Ferny_Boxes</li>
+                            </researchPrerequisites>
+                        </value>
+                    </nomatch>
                 </Operation>
 
                 <Operation Class="PatchOperationAdd">
@@ -215,100 +524,142 @@
                 </value>
                 </Operation>
 
-                <Operation Class="PatchOperationAdd">
-                <xpath>Defs/ThingDef[defName="DankPyon_ShelfEmpty"]</xpath>
-                <value>
-                    <researchPrerequisites Inherit="false"/>
-                </value>
+                <Operation Class="PatchOperationConditional">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="DankPyon_ShelfEmpty"]/researchPrerequisites</xpath>
+                    <match Class="PatchOperationReplace">
+                        <xpath>Defs/ThingDef[defName="DankPyon_ShelfEmpty"]/researchPrerequisites</xpath>
+                        <value>
+                            <researchPrerequisites Inherit="false">
+                                <li>Ferny_Shelves</li>
+                            </researchPrerequisites>
+                        </value>
+                    </match>
+                    <nomatch Class="PatchOperationAdd">
+                        <xpath>Defs/ThingDef[defName="DankPyon_ShelfEmpty"]</xpath>
+                        <value>
+                            <researchPrerequisites Inherit="false">
+                                <li>Ferny_Shelves</li>
+                            </researchPrerequisites>
+                        </value>
+                    </nomatch>
                 </Operation>
 
-                <Operation Class="PatchOperationAdd">
-                <xpath>Defs/ThingDef[defName="DankPyon_ShelfFilled1c"]</xpath>
-                <value>
-                    <researchPrerequisites Inherit="false"/>
-                </value>
+                <Operation Class="PatchOperationConditional">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="DankPyon_ShelfFilled1c"]/researchPrerequisites</xpath>
+                    <match Class="PatchOperationReplace">
+                        <xpath>Defs/ThingDef[defName="DankPyon_ShelfFilled1c"]/researchPrerequisites</xpath>
+                        <value>
+                            <researchPrerequisites Inherit="false">
+                                <li>Ferny_Shelves</li>
+                            </researchPrerequisites>
+                        </value>
+                    </match>
+                    <nomatch Class="PatchOperationAdd">
+                        <xpath>Defs/ThingDef[defName="DankPyon_ShelfFilled1c"]</xpath>
+                        <value>
+                            <researchPrerequisites Inherit="false">
+                                <li>Ferny_Shelves</li>
+                            </researchPrerequisites>
+                        </value>
+                    </nomatch>
                 </Operation>
 
-                <Operation Class="PatchOperationAdd">
-                <xpath>Defs/ThingDef[defName="DankPyon_ShelfFilled2c"]</xpath>
-                <value>
-                    <researchPrerequisites Inherit="false"/>
-                </value>
+                <Operation Class="PatchOperationConditional">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="DankPyon_ShelfFilled2c"]/researchPrerequisites</xpath>
+                    <match Class="PatchOperationReplace">
+                        <xpath>Defs/ThingDef[defName="DankPyon_ShelfFilled2c"]/researchPrerequisites</xpath>
+                        <value>
+                            <researchPrerequisites Inherit="false">
+                                <li>Ferny_Shelves</li>
+                            </researchPrerequisites>
+                        </value>
+                    </match>
+                    <nomatch Class="PatchOperationAdd">
+                        <xpath>Defs/ThingDef[defName="DankPyon_ShelfFilled2c"]</xpath>
+                        <value>
+                            <researchPrerequisites Inherit="false">
+                                <li>Ferny_Shelves</li>
+                            </researchPrerequisites>
+                        </value>
+                    </nomatch>
                 </Operation>
 
                 <Operation Class="PatchOperationAdd">
                 <xpath>Defs/ThingDef[defName="DankPyon_ShelfFilledEmerald"]</xpath>
                 <value>
-                    <researchPrerequisites Inherit="false"/>
+                    <researchPrerequisites Inherit="false"><li>Ferny_Shelves</li></researchPrerequisites>
                 </value>
                 </Operation>
 
                 <Operation Class="PatchOperationAdd">
                 <xpath>Defs/ThingDef[defName="DankPyon_ShelfFilledSapphire"]</xpath>
                 <value>
-                    <researchPrerequisites Inherit="false"/>
+                    <researchPrerequisites Inherit="false"><li>Ferny_Shelves</li></researchPrerequisites>
                 </value>
                 </Operation>
 
                 <Operation Class="PatchOperationAdd">
                 <xpath>Defs/ThingDef[defName="DankPyon_ShelfFilledRuby"]</xpath>
                 <value>
-                    <researchPrerequisites Inherit="false"/>
+                    <researchPrerequisites Inherit="false"><li>Ferny_Shelves</li></researchPrerequisites>
                 </value>
                 </Operation>
 
                 <Operation Class="PatchOperationAdd">
                 <xpath>Defs/ThingDef[defName="DankPyon_ShelfFilledSilverware"]</xpath>
                 <value>
-                    <researchPrerequisites Inherit="false"/>
+                    <researchPrerequisites Inherit="false"><li>Ferny_Shelves</li></researchPrerequisites>
                 </value>
                 </Operation>
 
                 <Operation Class="PatchOperationAdd">
                 <xpath>Defs/ThingDef[defName="DankPyon_ShelfFilledGoldware"]</xpath>
                 <value>
-                    <researchPrerequisites Inherit="false"/>
+                    <researchPrerequisites Inherit="false"><li>Ferny_Shelves</li></researchPrerequisites>
                 </value>
                 </Operation>
                 <Operation Class="PatchOperationAdd">
                 <xpath>Defs/ThingDef[defName="DankPyon_ShelfFilledChaliceSilver"]</xpath>
                 <value>
-                    <researchPrerequisites Inherit="false"/>
+                    <researchPrerequisites Inherit="false"><li>Ferny_Shelves</li></researchPrerequisites>
                 </value>
                 </Operation>
 
                 <Operation Class="PatchOperationAdd">
                 <xpath>Defs/ThingDef[defName="DankPyon_ShelfFilledChaliceGold"]</xpath>
                 <value>
-                    <researchPrerequisites Inherit="false"/>
+                    <researchPrerequisites Inherit="false"><li>Ferny_Shelves</li></researchPrerequisites>
                 </value>
                 </Operation>
 
                 <Operation Class="PatchOperationAdd">
                 <xpath>Defs/ThingDef[defName="DankPyon_ShelfFilledWine"]</xpath>
                 <value>
-                    <researchPrerequisites Inherit="false"/>
+                    <researchPrerequisites Inherit="false"><li>Ferny_Shelves</li></researchPrerequisites>
                 </value>
                 </Operation>
 
                 <Operation Class="PatchOperationAdd">
                 <xpath>Defs/ThingDef[defName="DankPyon_ShelfFilledFood"]</xpath>
                 <value>
-                    <researchPrerequisites Inherit="false"/>
+                    <researchPrerequisites Inherit="false"><li>Ferny_Shelves</li></researchPrerequisites>
                 </value>
                 </Operation>
 
                 <Operation Class="PatchOperationAdd">
                 <xpath>Defs/ThingDef[defName="DankPyon_ShelfFilledIngot"]</xpath>
                 <value>
-                    <researchPrerequisites Inherit="false"/>
+                    <researchPrerequisites Inherit="false"><li>Ferny_Shelves</li></researchPrerequisites>
                 </value>
                 </Operation>
 
                 <Operation Class="PatchOperationAdd">
                 <xpath>Defs/ThingDef[defName="DankPyon_ShelfFilledBook"]</xpath>
                 <value>
-                    <researchPrerequisites Inherit="false"/>
+                    <researchPrerequisites Inherit="false"><li>Ferny_Shelves</li></researchPrerequisites>
                 </value>
                 </Operation>
 
@@ -463,24 +814,7 @@
                     <researchPrerequisites Inherit="false"/>
                 </value>
                 </Operation>
-                <Operation Class="PatchOperationReplace">
-                    <xpath>Defs/ThingDef[defName="DankPyon_RusticChest"]/designationCategory</xpath>
-                    <value>
-                        <designationCategory>ASFstorage</designationCategory>
-                    </value>
-                </Operation>
-                <Operation Class="PatchOperationReplace">
-                    <xpath>Defs/ThingDef[defName="DankPyon_MetalStrongbox"]/designationCategory</xpath>
-                    <value>
-                        <designationCategory>ASFstorage</designationCategory>
-                    </value>
-                </Operation>
-                <Operation Class="PatchOperationReplace">
-                    <xpath>Defs/ThingDef[defName="DankPyon_RoyalChest"]/designationCategory</xpath>
-                    <value>
-                        <designationCategory>ASFstorage</designationCategory>
-                    </value>
-                </Operation>
+                <!-- Original maxItemsInCell: 3 (inherited from ShelfBase) -->
                 <Operation Class="PatchOperationAdd">
                     <xpath>Defs/ThingDef[@Name="DankPyon_VanillaShelfBase"]</xpath>
                     <value>
@@ -507,31 +841,6 @@
                     </building>
                     </value>
                 </Operation>
-
-                <Operation Class="PatchOperationAdd">
-                <xpath>Defs/ThingDef[defName="Shelf"]</xpath>
-                <value>
-                    <researchPrerequisites><li>DankPyon_RusticStorage</li></researchPrerequisites>
-                </value>
-                </Operation>
-                <Operation Class="PatchOperationAdd">
-                <xpath>Defs/ThingDef[defName="ShelfSmall"]</xpath>
-                <value>
-                    <researchPrerequisites><li>DankPyon_RusticStorage</li></researchPrerequisites>
-                </value>
-                </Operation>
-                <Operation Class="PatchOperationAdd">
-                <xpath>Defs/ThingDef[defName="Bookcase"]</xpath>
-                <value>
-                    <researchPrerequisites><li>DankPyon_RusticStorage</li></researchPrerequisites>
-                </value>
-                </Operation>
-                <Operation Class="PatchOperationAdd">
-                <xpath>Defs/ThingDef[defName="BookcaseSmall"]</xpath>
-                <value>
-                    <researchPrerequisites><li>DankPyon_RusticStorage</li></researchPrerequisites>
-                </value>
-                </Operation>
                 <Operation Class="PatchOperationAdd">
                     <xpath>Defs/ResearchProjectDef[defName="DankPyon_RusticStorage"]</xpath>
                     <value>
@@ -540,198 +849,6 @@
                         </tags>
                     </value>
                 </Operation>
-
-
-
-
-
-
-
-<!-- Reel Overlap/Patches -->
-                <Operation Class="PatchOperationFindMod">
-                    <mods>
-                    <li>Reel's Expanded Storage</li>
-                    </mods>
-                    <match Class="PatchOperationSequence">
-                    <operations>
-                    <li Class="PatchOperationAdd">
-                        <xpath>Defs</xpath>
-                        <value>
-							<VEF.Buildings.HiddenDesignatorsDef>
-								<defName>FernyMedievalOverhaulReelStorageProgStorage_HiddenDesignators</defName>
-								<hiddenDesignators>
-									<li>ReelStorageHayBale</li>
-                                    <li>ReelStorageLargeWoodPile</li>
-                                    <li>ReelStorageWoodPile</li>
-                                    <li>ReelStorageStonePile</li>
-                                    <li>ReelStorageLargeStonePile</li>
-                                    <li>ReelStorageWoodChest</li>
-                                    <li>ReelStorageTanningRack</li>
-                                    <li>ReelStorageBookshelf</li>
-                                    <li>ReelStorageLargeWoodChest</li>
-								</hiddenDesignators>
-							</VEF.Buildings.HiddenDesignatorsDef>
-                        </value>
-                    </li>
-
-                        <!-- RESEARCH MERGING -->
-
-                        <li Class="PatchOperationReplace">
-                        <xpath>Defs/ThingDef[defName="ReelStorageWoodChest"]/researchPrerequisites</xpath>
-                        <value>
-                            <researchPrerequisites></researchPrerequisites>
-                        </value>
-                        </li>
-                        <li Class="PatchOperationReplace">
-                        <xpath>Defs/ThingDef[defName="ReelStorageHayBale"]/researchPrerequisites</xpath>
-                        <value>
-                            <researchPrerequisites></researchPrerequisites>
-                        </value>
-                        </li>
-                        <li Class="PatchOperationReplace">
-                        <xpath>Defs/ThingDef[defName="ReelStorageTanningRack"]/researchPrerequisites</xpath>
-                        <value>
-                            <researchPrerequisites></researchPrerequisites>
-                        </value>
-                        </li>
-                        <li Class="PatchOperationReplace">
-                        <xpath>Defs/ThingDef[defName="ReelStorageWeaponRack"]/researchPrerequisites</xpath>
-                        <value>
-                            <researchPrerequisites><li>DankPyon_RusticStorage</li></researchPrerequisites>
-                        </value>
-                        </li>
-                        <li Class="PatchOperationReplace">
-                        <xpath>Defs/ThingDef[defName="ReelStorageWoodPile"]/researchPrerequisites</xpath>
-                        <value>
-                            <researchPrerequisites></researchPrerequisites>
-                        </value>
-                        </li>
-                        <li Class="PatchOperationReplace">
-                        <xpath>Defs/ThingDef[defName="ReelStorageStonePile"]/researchPrerequisites</xpath>
-                        <value>
-                            <researchPrerequisites></researchPrerequisites>
-                        </value>
-                        </li>
-                        <li Class="PatchOperationReplace">
-                        <xpath>Defs/ThingDef[defName="ReelStorageAnimalFeeder"]/researchPrerequisites</xpath>
-                        <value>
-                            <researchPrerequisites><li>DankPyon_RusticStorage</li></researchPrerequisites>
-                        </value>
-                        </li>
-                        <li Class="PatchOperationReplace">
-                        <xpath>Defs/ThingDef[defName="ReelStorageBookshelf"]/researchPrerequisites</xpath>
-                        <value>
-                            <researchPrerequisites></researchPrerequisites>
-                        </value>
-                        </li>
-                        <li Class="PatchOperationReplace">
-                        <xpath>Defs/ThingDef[defName="ReelStorageLargeWoodPile"]/researchPrerequisites</xpath>
-                        <value>
-                            <researchPrerequisites></researchPrerequisites>
-                        </value>
-                        </li>
-                        <li Class="PatchOperationReplace">
-                        <xpath>Defs/ThingDef[defName="ReelStorageAnimalFeeder"]/researchPrerequisites</xpath>
-                        <value>
-                            <researchPrerequisites><li>DankPyon_RusticStorage</li></researchPrerequisites>
-                        </value>
-                        </li>
-                        <li Class="PatchOperationReplace">
-                        <xpath>Defs/ThingDef[defName="ReelStorageMeatHook"]/researchPrerequisites</xpath>
-                        <value>
-                            <researchPrerequisites><li>DankPyon_RusticStorage</li></researchPrerequisites>
-                        </value>
-                        </li>
-                        <li Class="PatchOperationReplace">
-                        <xpath>Defs/ThingDef[defName="ReelStorageLargeStonePile"]/researchPrerequisites</xpath>
-                        <value>
-                            <researchPrerequisites></researchPrerequisites>
-                        </value>
-                        </li>
-                        <li Class="PatchOperationReplace">
-                        <xpath>Defs/ThingDef[defName="ReelStorageWineRack"]/researchPrerequisites</xpath>
-                        <value>
-                            <researchPrerequisites><li>DankPyon_RusticStorage</li></researchPrerequisites>
-                        </value>
-                        </li>
-                        <li Class="PatchOperationReplace">
-                        <xpath>Defs/ResearchProjectDef[defName="ReelIndustrialStorage"]/prerequisites</xpath>
-                        <value>
-                            <prerequisites>
-                            <li>Electricity</li>
-                            <li>DankPyon_RusticStorage</li>
-                            </prerequisites>
-                        </value>
-                        </li>
-                    <!-- new july 17 2025 -->
-                        <li Class="PatchOperationReplace">
-                        <xpath>Defs/ThingDef[defName="ReelStorageNewBarrel"]/researchPrerequisites</xpath>
-                        <value>
-                            <researchPrerequisites><li>DankPyon_RusticStorage</li></researchPrerequisites>
-                        </value>
-                        </li>
-                        <li Class="PatchOperationReplace">
-                        <xpath>Defs/ThingDef[defName="ReelStorageNewBarrel"]/researchPrerequisites</xpath>
-                        <value>
-                            <researchPrerequisites><li>DankPyon_RusticStorage</li></researchPrerequisites>
-                        </value>
-                        </li>
-                        <li Class="PatchOperationReplace">
-                        <xpath>Defs/ThingDef[defName="ReelStorageNewLargeWoodCrate"]/researchPrerequisites</xpath>
-                        <value>
-                            <researchPrerequisites><li>DankPyon_RusticStorage</li></researchPrerequisites>
-                        </value>
-                        </li>
-                        <li Class="PatchOperationReplace">
-                        <xpath>Defs/ThingDef[defName="ReelStorageNewWoodCrate"]/researchPrerequisites</xpath>
-                        <value>
-                            <researchPrerequisites><li>DankPyon_RusticStorage</li></researchPrerequisites>
-                        </value>
-                        </li>
-                        <li Class="PatchOperationReplace">
-                        <xpath>Defs/ThingDef[defName="ReelStorageLargeWoodChest"]/researchPrerequisites</xpath>
-                        <value>
-                            <researchPrerequisites><li>DankPyon_RusticStorage</li></researchPrerequisites>
-                        </value>
-                        </li>
-
-                        <!-- ERASE SHIT -->
-
-                        <li Class="PatchOperationRemove">
-                        <xpath>Defs/ResearchProjectDef[defName="ReelNeolithicStorage"]</xpath>
-                        </li>
-                        <li Class="PatchOperationRemove">
-                        <xpath>Defs/ResearchProjectDef[defName="ReelMedievalStorage"]</xpath>
-                        </li>
-                    </operations>
-                    </match>
-                </Operation>
-
-                <Operation Class="PatchOperationFindMod">
-                    <mods>
-                    <li>Adaptive Primitive Storage</li>
-                    </mods>
-                    <match Class="PatchOperationSequence">
-                    <operations>
-                    <li Class="PatchOperationAdd">
-                        <xpath>Defs</xpath>
-                        <value>
-							<VEF.Buildings.HiddenDesignatorsDef>
-								<defName>FernyMedievalOverhaulAdaptivePrimitiveProgStorage_HiddenDesignators</defName>
-								<hiddenDesignators>
-									<li>DankPyon_WoodLogs1x1c</li>
-                                    <li>DankPyon_WoodLogs2x2c</li>
-                                    <li>DankPyon_WoodLogs1x2c</li>
-								</hiddenDesignators>
-							</VEF.Buildings.HiddenDesignatorsDef>
-                        </value>
-                    </li>
-                    </operations>
-                    </match>
-                </Operation>
-
-
-
 
 
 
@@ -762,6 +879,12 @@
 
 
 <!-- Sacks -->
+                <Operation Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="DankPyon_SackClosed"]/label</xpath>
+                    <value>
+                        <label>Linen sack (closed)</label>
+                    </value>
+                </Operation>
 
                 <Operation Class="PatchOperationRemove">
                     <xpath>Defs/ThingDef[defName="DankPyon_SackClosed"]/designatorDropdown</xpath>
@@ -845,8 +968,220 @@
                 </Operation> -->
 
 
+                <Operation Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="DankPyon_RusticStorage"]/label</xpath>
+                <value>
+                    <label>storage cart</label>
+                </value>
+                </Operation>
 
 
+
+  <!-- Merged late research overrides -->
+  <!-- Late override: keep MO shelf/cupboard storage unlocked only by Ferny_Shelves. -->
+  <Operation Class="PatchOperationSequence">
+    <success>Always</success>
+    <operations>
+      <li Class="PatchOperationConditional">
+        <success>Always</success>
+        <xpath>Defs/ThingDef[defName="DankPyon_RusticCupboardEmpty"]/researchPrerequisites</xpath>
+        <match Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="DankPyon_RusticCupboardEmpty"]/researchPrerequisites</xpath><value><researchPrerequisites Inherit="false"><li>Ferny_Shelves</li></researchPrerequisites></value></match>
+        <nomatch Class="PatchOperationAdd"><xpath>Defs/ThingDef[defName="DankPyon_RusticCupboardEmpty"]</xpath><value><researchPrerequisites Inherit="false"><li>Ferny_Shelves</li></researchPrerequisites></value></nomatch>
+      </li>
+      <li Class="PatchOperationConditional">
+        <success>Always</success>
+        <xpath>Defs/ThingDef[defName="DankPyon_RusticCupboardBread"]/researchPrerequisites</xpath>
+        <match Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="DankPyon_RusticCupboardBread"]/researchPrerequisites</xpath><value><researchPrerequisites Inherit="false"><li>Ferny_Shelves</li></researchPrerequisites></value></match>
+        <nomatch Class="PatchOperationAdd"><xpath>Defs/ThingDef[defName="DankPyon_RusticCupboardBread"]</xpath><value><researchPrerequisites Inherit="false"><li>Ferny_Shelves</li></researchPrerequisites></value></nomatch>
+      </li>
+      <li Class="PatchOperationConditional">
+        <success>Always</success>
+        <xpath>Defs/ThingDef[defName="DankPyon_RusticCupboardCheese"]/researchPrerequisites</xpath>
+        <match Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="DankPyon_RusticCupboardCheese"]/researchPrerequisites</xpath><value><researchPrerequisites Inherit="false"><li>Ferny_Shelves</li></researchPrerequisites></value></match>
+        <nomatch Class="PatchOperationAdd"><xpath>Defs/ThingDef[defName="DankPyon_RusticCupboardCheese"]</xpath><value><researchPrerequisites Inherit="false"><li>Ferny_Shelves</li></researchPrerequisites></value></nomatch>
+      </li>
+      <li Class="PatchOperationConditional">
+        <success>Always</success>
+        <xpath>Defs/ThingDef[defName="DankPyon_RusticCupboardWine"]/researchPrerequisites</xpath>
+        <match Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="DankPyon_RusticCupboardWine"]/researchPrerequisites</xpath><value><researchPrerequisites Inherit="false"><li>Ferny_Shelves</li></researchPrerequisites></value></match>
+        <nomatch Class="PatchOperationAdd"><xpath>Defs/ThingDef[defName="DankPyon_RusticCupboardWine"]</xpath><value><researchPrerequisites Inherit="false"><li>Ferny_Shelves</li></researchPrerequisites></value></nomatch>
+      </li>
+
+      <li Class="PatchOperationConditional">
+        <success>Always</success>
+        <xpath>Defs/ThingDef[defName="DankPyon_LargeShelfEmpty"]/researchPrerequisites</xpath>
+        <match Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="DankPyon_LargeShelfEmpty"]/researchPrerequisites</xpath><value><researchPrerequisites Inherit="false"><li>Ferny_Shelves</li></researchPrerequisites></value></match>
+        <nomatch Class="PatchOperationAdd"><xpath>Defs/ThingDef[defName="DankPyon_LargeShelfEmpty"]</xpath><value><researchPrerequisites Inherit="false"><li>Ferny_Shelves</li></researchPrerequisites></value></nomatch>
+      </li>
+      <li Class="PatchOperationConditional">
+        <success>Always</success>
+        <xpath>Defs/ThingDef[defName="DankPyon_LargeShelf_Bread"]/researchPrerequisites</xpath>
+        <match Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="DankPyon_LargeShelf_Bread"]/researchPrerequisites</xpath><value><researchPrerequisites Inherit="false"><li>Ferny_Shelves</li></researchPrerequisites></value></match>
+        <nomatch Class="PatchOperationAdd"><xpath>Defs/ThingDef[defName="DankPyon_LargeShelf_Bread"]</xpath><value><researchPrerequisites Inherit="false"><li>Ferny_Shelves</li></researchPrerequisites></value></nomatch>
+      </li>
+      <li Class="PatchOperationConditional">
+        <success>Always</success>
+        <xpath>Defs/ThingDef[defName="DankPyon_LargeShelf_Grain"]/researchPrerequisites</xpath>
+        <match Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="DankPyon_LargeShelf_Grain"]/researchPrerequisites</xpath><value><researchPrerequisites Inherit="false"><li>Ferny_Shelves</li></researchPrerequisites></value></match>
+        <nomatch Class="PatchOperationAdd"><xpath>Defs/ThingDef[defName="DankPyon_LargeShelf_Grain"]</xpath><value><researchPrerequisites Inherit="false"><li>Ferny_Shelves</li></researchPrerequisites></value></nomatch>
+      </li>
+      <li Class="PatchOperationConditional">
+        <success>Always</success>
+        <xpath>Defs/ThingDef[defName="DankPyon_Large_Meat_Shelf"]/researchPrerequisites</xpath>
+        <match Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="DankPyon_Large_Meat_Shelf"]/researchPrerequisites</xpath><value><researchPrerequisites Inherit="false"><li>Ferny_Shelves</li></researchPrerequisites></value></match>
+        <nomatch Class="PatchOperationAdd"><xpath>Defs/ThingDef[defName="DankPyon_Large_Meat_Shelf"]</xpath><value><researchPrerequisites Inherit="false"><li>Ferny_Shelves</li></researchPrerequisites></value></nomatch>
+      </li>
+      <li Class="PatchOperationConditional">
+        <success>Always</success>
+        <xpath>Defs/ThingDef[defName="DankPyon_LargeShelf_Cheese"]/researchPrerequisites</xpath>
+        <match Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="DankPyon_LargeShelf_Cheese"]/researchPrerequisites</xpath><value><researchPrerequisites Inherit="false"><li>Ferny_Shelves</li></researchPrerequisites></value></match>
+        <nomatch Class="PatchOperationAdd"><xpath>Defs/ThingDef[defName="DankPyon_LargeShelf_Cheese"]</xpath><value><researchPrerequisites Inherit="false"><li>Ferny_Shelves</li></researchPrerequisites></value></nomatch>
+      </li>
+      <li Class="PatchOperationConditional">
+        <success>Always</success>
+        <xpath>Defs/ThingDef[defName="DankPyon_LargeShelf_Wine"]/researchPrerequisites</xpath>
+        <match Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="DankPyon_LargeShelf_Wine"]/researchPrerequisites</xpath><value><researchPrerequisites Inherit="false"><li>Ferny_Shelves</li></researchPrerequisites></value></match>
+        <nomatch Class="PatchOperationAdd"><xpath>Defs/ThingDef[defName="DankPyon_LargeShelf_Wine"]</xpath><value><researchPrerequisites Inherit="false"><li>Ferny_Shelves</li></researchPrerequisites></value></nomatch>
+      </li>
+      <li Class="PatchOperationConditional">
+        <success>Always</success>
+        <xpath>Defs/ThingDef[defName="DankPyon_LargeShelf_Mead"]/researchPrerequisites</xpath>
+        <match Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="DankPyon_LargeShelf_Mead"]/researchPrerequisites</xpath><value><researchPrerequisites Inherit="false"><li>Ferny_Shelves</li></researchPrerequisites></value></match>
+        <nomatch Class="PatchOperationAdd"><xpath>Defs/ThingDef[defName="DankPyon_LargeShelf_Mead"]</xpath><value><researchPrerequisites Inherit="false"><li>Ferny_Shelves</li></researchPrerequisites></value></nomatch>
+      </li>
+      <li Class="PatchOperationConditional">
+        <success>Always</success>
+        <xpath>Defs/ThingDef[defName="DankPyon_LargeShelf_Vegetables"]/researchPrerequisites</xpath>
+        <match Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="DankPyon_LargeShelf_Vegetables"]/researchPrerequisites</xpath><value><researchPrerequisites Inherit="false"><li>Ferny_Shelves</li></researchPrerequisites></value></match>
+        <nomatch Class="PatchOperationAdd"><xpath>Defs/ThingDef[defName="DankPyon_LargeShelf_Vegetables"]</xpath><value><researchPrerequisites Inherit="false"><li>Ferny_Shelves</li></researchPrerequisites></value></nomatch>
+      </li>
+
+      <li Class="PatchOperationConditional">
+        <success>Always</success>
+        <xpath>Defs/ThingDef[defName="DankPyon_ShelfEmpty"]/researchPrerequisites</xpath>
+        <match Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="DankPyon_ShelfEmpty"]/researchPrerequisites</xpath><value><researchPrerequisites Inherit="false"><li>Ferny_Shelves</li></researchPrerequisites></value></match>
+        <nomatch Class="PatchOperationAdd"><xpath>Defs/ThingDef[defName="DankPyon_ShelfEmpty"]</xpath><value><researchPrerequisites Inherit="false"><li>Ferny_Shelves</li></researchPrerequisites></value></nomatch>
+      </li>
+      <li Class="PatchOperationConditional">
+        <success>Always</success>
+        <xpath>Defs/ThingDef[defName="DankPyon_ShelfFilled1c"]/researchPrerequisites</xpath>
+        <match Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="DankPyon_ShelfFilled1c"]/researchPrerequisites</xpath><value><researchPrerequisites Inherit="false"><li>Ferny_Shelves</li></researchPrerequisites></value></match>
+        <nomatch Class="PatchOperationAdd"><xpath>Defs/ThingDef[defName="DankPyon_ShelfFilled1c"]</xpath><value><researchPrerequisites Inherit="false"><li>Ferny_Shelves</li></researchPrerequisites></value></nomatch>
+      </li>
+      <li Class="PatchOperationConditional">
+        <success>Always</success>
+        <xpath>Defs/ThingDef[defName="DankPyon_ShelfFilled2c"]/researchPrerequisites</xpath>
+        <match Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="DankPyon_ShelfFilled2c"]/researchPrerequisites</xpath><value><researchPrerequisites Inherit="false"><li>Ferny_Shelves</li></researchPrerequisites></value></match>
+        <nomatch Class="PatchOperationAdd"><xpath>Defs/ThingDef[defName="DankPyon_ShelfFilled2c"]</xpath><value><researchPrerequisites Inherit="false"><li>Ferny_Shelves</li></researchPrerequisites></value></nomatch>
+      </li>
+    </operations>
+  </Operation>
+
+  <Operation Class="PatchOperationSequence">
+    <success>Always</success>
+    <operations>
+      <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="DankPyon_SackClosed"]/researchPrerequisites</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="DankPyon_SackClosed"]/researchPrerequisites</xpath>
+          <value>
+            <researchPrerequisites Inherit="false">
+              <li>Ferny_Sacks</li>
+            </researchPrerequisites>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="DankPyon_SackClosed"]</xpath>
+          <value>
+            <researchPrerequisites Inherit="false">
+              <li>Ferny_Sacks</li>
+            </researchPrerequisites>
+          </value>
+        </nomatch>
+      </li>
+
+      <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="DankPyon_BundledSack1x1c"]/researchPrerequisites</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="DankPyon_BundledSack1x1c"]/researchPrerequisites</xpath>
+          <value>
+            <researchPrerequisites Inherit="false">
+              <li>Ferny_Sacks</li>
+            </researchPrerequisites>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="DankPyon_BundledSack1x1c"]</xpath>
+          <value>
+            <researchPrerequisites Inherit="false">
+              <li>Ferny_Sacks</li>
+            </researchPrerequisites>
+          </value>
+        </nomatch>
+      </li>
+
+      <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="DankPyon_BundledSack2x2c"]/researchPrerequisites</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="DankPyon_BundledSack2x2c"]/researchPrerequisites</xpath>
+          <value>
+            <researchPrerequisites Inherit="false">
+              <li>Ferny_Sacks</li>
+            </researchPrerequisites>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="DankPyon_BundledSack2x2c"]</xpath>
+          <value>
+            <researchPrerequisites Inherit="false">
+              <li>Ferny_Sacks</li>
+            </researchPrerequisites>
+          </value>
+        </nomatch>
+      </li>
+    </operations>
+  </Operation>
+
+  <Operation Class="PatchOperationSequence">
+    <success>Always</success>
+    <operations>
+      <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="DankPyon_Bale1x2c"]/researchPrerequisites</xpath>
+        <match Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="DankPyon_Bale1x2c"]/researchPrerequisites</xpath><value><researchPrerequisites Inherit="false"><li MayRequire="oskarpotocki.vfe.tribals">VFET_Agriculture</li></researchPrerequisites></value></match>
+        <nomatch Class="PatchOperationAdd"><xpath>Defs/ThingDef[defName="DankPyon_Bale1x2c"]</xpath><value><researchPrerequisites Inherit="false"><li MayRequire="oskarpotocki.vfe.tribals">VFET_Agriculture</li></researchPrerequisites></value></nomatch>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="DankPyon_HayBale2x2c"]/researchPrerequisites</xpath>
+        <match Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="DankPyon_HayBale2x2c"]/researchPrerequisites</xpath><value><researchPrerequisites Inherit="false"><li MayRequire="oskarpotocki.vfe.tribals">VFET_Agriculture</li></researchPrerequisites></value></match>
+        <nomatch Class="PatchOperationAdd"><xpath>Defs/ThingDef[defName="DankPyon_HayBale2x2c"]</xpath><value><researchPrerequisites Inherit="false"><li MayRequire="oskarpotocki.vfe.tribals">VFET_Agriculture</li></researchPrerequisites></value></nomatch>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="DankPyon_StrawBale1x2c"]/researchPrerequisites</xpath>
+        <match Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="DankPyon_StrawBale1x2c"]/researchPrerequisites</xpath><value><researchPrerequisites Inherit="false"><li MayRequire="oskarpotocki.vfe.tribals">VFET_Agriculture</li></researchPrerequisites></value></match>
+        <nomatch Class="PatchOperationAdd"><xpath>Defs/ThingDef[defName="DankPyon_StrawBale1x2c"]</xpath><value><researchPrerequisites Inherit="false"><li MayRequire="oskarpotocki.vfe.tribals">VFET_Agriculture</li></researchPrerequisites></value></nomatch>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="DankPyon_StrawBale2x2c"]/researchPrerequisites</xpath>
+        <match Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="DankPyon_StrawBale2x2c"]/researchPrerequisites</xpath><value><researchPrerequisites Inherit="false"><li MayRequire="oskarpotocki.vfe.tribals">VFET_Agriculture</li></researchPrerequisites></value></match>
+        <nomatch Class="PatchOperationAdd"><xpath>Defs/ThingDef[defName="DankPyon_StrawBale2x2c"]</xpath><value><researchPrerequisites Inherit="false"><li MayRequire="oskarpotocki.vfe.tribals">VFET_Agriculture</li></researchPrerequisites></value></nomatch>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="DankPyon_FlaxBale1x2c"]/researchPrerequisites</xpath>
+        <match Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="DankPyon_FlaxBale1x2c"]/researchPrerequisites</xpath><value><researchPrerequisites Inherit="false"><li MayRequire="oskarpotocki.vfe.tribals">VFET_Agriculture</li></researchPrerequisites></value></match>
+        <nomatch Class="PatchOperationAdd"><xpath>Defs/ThingDef[defName="DankPyon_FlaxBale1x2c"]</xpath><value><researchPrerequisites Inherit="false"><li MayRequire="oskarpotocki.vfe.tribals">VFET_Agriculture</li></researchPrerequisites></value></nomatch>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="DankPyon_FlaxBale2x2c"]/researchPrerequisites</xpath>
+        <match Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="DankPyon_FlaxBale2x2c"]/researchPrerequisites</xpath><value><researchPrerequisites Inherit="false"><li MayRequire="oskarpotocki.vfe.tribals">VFET_Agriculture</li></researchPrerequisites></value></match>
+        <nomatch Class="PatchOperationAdd"><xpath>Defs/ThingDef[defName="DankPyon_FlaxBale2x2c"]</xpath><value><researchPrerequisites Inherit="false"><li MayRequire="oskarpotocki.vfe.tribals">VFET_Agriculture</li></researchPrerequisites></value></nomatch>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="DankPyon_RackMixed"]/researchPrerequisites</xpath>
+        <match Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="DankPyon_RackMixed"]/researchPrerequisites</xpath><value><researchPrerequisites Inherit="false"><li>Ferny_WeaponRack</li></researchPrerequisites></value></match>
+        <nomatch Class="PatchOperationAdd"><xpath>Defs/ThingDef[defName="DankPyon_RackMixed"]</xpath><value><researchPrerequisites Inherit="false"><li>Ferny_WeaponRack</li></researchPrerequisites></value></nomatch>
+      </li>
+    </operations>
+  </Operation>
 </Patch>
 
         

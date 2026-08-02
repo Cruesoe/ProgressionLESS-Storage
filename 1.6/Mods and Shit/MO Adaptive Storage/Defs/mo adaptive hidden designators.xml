@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<VEF.Buildings.HiddenDesignatorsDef>
+		<defName>ProgStorage_AdaptiveMO</defName>
+		<hiddenDesignators>
+		<!-- Display bundles -->
+			<li>DankPyon_WoodLogs1x1c</li>
+			<li>DankPyon_Timber1x1c</li>
+			<li>DankPyon_Bricks1x1c</li>
+		<!-- Display stacks -->
+			<li>DankPyon_WoodLogs1x2c</li>
+			<li>DankPyon_Timber1x2c</li>
+			<li>DankPyon_Bricks1x2c</li>
+		<!-- Display stacks -->
+			<li>DankPyon_WoodLogs2x2c</li>
+			<li>DankPyon_Timber2x2c</li>
+			<li>DankPyon_Bricks2x2c</li>
+		<!-- Ingot stacks -->
+			<li>DankPyon_IronIngots1x1c</li>
+			<li>DankPyon_IronIngots1x2c</li>
+			<li>DankPyon_IronIngots2x2c</li>
+			<li>DankPyon_SteelIngots1x1c</li>
+			<li>DankPyon_SteelIngots1x2c</li>
+			<li>DankPyon_SteelIngots2x2c</li>
+			<li>DankPyon_SilverIngots1x1c</li>
+			<li>DankPyon_SilverIngots1x2c</li>
+			<li>DankPyon_SilverIngots2x2c</li>
+			<li>DankPyon_GoldIngots1x1c</li>
+			<li>DankPyon_GoldIngots1x2c</li>
+				<li>DankPyon_GoldIngots2x2c</li>
+				<li>DankPyon_Plasteel1x1c</li>
+				<li>DankPyon_Plasteel1x2c</li>
+				<li>DankPyon_Plasteel2x2c</li>
+			<!-- Hideout display ingot piles -->
+				<li>DankPyon_IngotStack1x1_Iron</li>
+				<li>DankPyon_IngotStack1x1_Steel</li>
+				<li>DankPyon_IngotStack1x1_Gold</li>
+			<!-- Melee racks -->
+				<li>DankPyon_Rack2x1a</li>
+			<li>DankPyon_Rack2x1b</li>
+			<li>DankPyon_Rack2x1c</li>
+		<!-- Ranged racks -->
+			<li>DankPyon_RackRange2x1a</li>
+			<li>DankPyon_RackRange2x1b</li>
+			<li>DankPyon_RackRange2x1c</li>
+		<!-- Barrels -->
+			<li>DankPyon_RusticOreBarrelEmpty</li>
+			<li>DankPyon_RusticTextileBarrelEmpty</li>
+			<li>DankPyon_RusticLogBarrelEmpty</li>
+			<li>DankPyon_RusticComponentBarrelEmpty</li>
+			<li>DankPyon_RusticGrapeBarrelEmpty</li>
+		</hiddenDesignators>
+	</VEF.Buildings.HiddenDesignatorsDef>
+</Defs>

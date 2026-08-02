@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<ResearchProjectDef>
+		<defName>Ferny_DisplayPod</defName>
+		<label>Display pod</label>
+		<description>Build display pods to showcase special items.</description>
+		<baseCost>600</baseCost>
+		<techLevel>Spacer</techLevel>
+		<researchViewX>26.00</researchViewX>
+		<researchViewY>3.00</researchViewY>
+		<prerequisites>
+			<li MayRequire="reel.expanded.storage">ReelSpacerStorage</li>
+		</prerequisites>
+	</ResearchProjectDef>
+
+</Defs>

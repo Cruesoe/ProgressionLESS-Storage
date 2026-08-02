@@ -1,6 +1,106 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>        
 
+
+
+
+<!-- MAY 24 2026, New research projects  -->
+
+    <Operation Class="PatchOperationConditional">
+        <xpath>/Defs/ThingDef[defName="ReelStorageAnimalFeeder"]/researchPrerequisites</xpath>
+        <match Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[defName="ReelStorageAnimalFeeder"]/researchPrerequisites</xpath>
+        <value>
+            <researchPrerequisites>
+            <li>Ferny_AnimalFeeder</li>
+            </researchPrerequisites> 
+        </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="ReelStorageAnimalFeeder"]</xpath>
+        <value>
+            <researchPrerequisites>
+            <li>Ferny_AnimalFeeder</li>
+            </researchPrerequisites> 
+        </value>
+        </nomatch>
+    </Operation>
+
+
+    <Operation Class="PatchOperationConditional">
+        <xpath>/Defs/ThingDef[defName="ReelStorageNewLargeWoodCrate"]/researchPrerequisites</xpath>
+        <match Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[defName="ReelStorageNewLargeWoodCrate"]/researchPrerequisites</xpath>
+        <value>
+            <researchPrerequisites>
+            <li>Ferny_Boxes</li>
+            </researchPrerequisites> 
+        </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="ReelStorageNewLargeWoodCrate"]</xpath>
+        <value>
+            <researchPrerequisites>
+            <li>Ferny_Boxes</li>
+            </researchPrerequisites> 
+        </value>
+        </nomatch>
+    </Operation>
+
+    <Operation Class="PatchOperationConditional">
+        <xpath>/Defs/ThingDef[defName="ReelStorageNewWoodCrate"]/researchPrerequisites</xpath>
+        <match Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[defName="ReelStorageNewWoodCrate"]/researchPrerequisites</xpath>
+        <value>
+            <researchPrerequisites>
+            <li>Ferny_Boxes</li>
+            </researchPrerequisites> 
+        </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="ReelStorageNewWoodCrate"]</xpath>
+        <value>
+            <researchPrerequisites>
+            <li>Ferny_Boxes</li>
+            </researchPrerequisites> 
+        </value>
+        </nomatch>
+    </Operation>
+
+
+    <Operation Class="PatchOperationConditional">
+        <xpath>/Defs/ThingDef[defName="ReelStorageNewFridge"]/researchPrerequisites</xpath>
+        <match Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[defName="ReelStorageNewFridge"]/researchPrerequisites</xpath>
+        <value>
+            <researchPrerequisites>
+            <li>Ferny_Fridges</li>
+            </researchPrerequisites> 
+        </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="ReelStorageNewFridge"]</xpath>
+        <value>
+            <researchPrerequisites>
+            <li>Ferny_Fridges</li>
+            </researchPrerequisites> 
+        </value>
+        </nomatch>
+    </Operation>
+
+
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>/Defs/ResearchProjectDef[defName="ReelIndustrialStorage"]/prerequisites</xpath>
+    <value>
+      <prerequisites>
+        <li>Ferny_Boxes</li>
+      </prerequisites>
+    </value>
+  </Operation>
+
+
+<!-- Old research project patches -->
   <Operation Class="PatchOperationReplace">
     <xpath>/Defs/ThingDef[defName="ReelStorageNewMedicineCabinet"]/researchPrerequisites</xpath>
     <value>
@@ -29,5 +129,62 @@
                     <value>
                         <label>chemfuel pallet</label>
                     </value>
-                </Operation>5
+                </Operation>
+
+                <Operation Class="PatchOperationReplace">
+                <xpath>Defs/ThingDef[defName="ReelStorageNewBarrel"]/researchPrerequisites</xpath>
+                <value>
+                    <researchPrerequisites Inherit="false"><li>Ferny_Barrels</li></researchPrerequisites>
+                </value>
+                </Operation>
+
+
+
+  <!-- Merged late research overrides -->
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="ReelStorageMeatHook"]/researchPrerequisites</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="ReelStorageMeatHook"]/researchPrerequisites</xpath>
+      <value>
+        <researchPrerequisites Inherit="false">
+          <li>Ferny_MeatHook</li>
+        </researchPrerequisites>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="ReelStorageMeatHook"]</xpath>
+      <value>
+        <researchPrerequisites Inherit="false">
+          <li>Ferny_MeatHook</li>
+        </researchPrerequisites>
+      </value>
+    </nomatch>
+  </Operation>
+
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="ReelStorageWeaponRack"]/researchPrerequisites</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="ReelStorageWeaponRack"]/researchPrerequisites</xpath>
+      <value>
+        <researchPrerequisites Inherit="false">
+          <li>Ferny_WeaponRack</li>
+        </researchPrerequisites>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="ReelStorageWeaponRack"]</xpath>
+      <value>
+        <researchPrerequisites Inherit="false">
+          <li>Ferny_WeaponRack</li>
+        </researchPrerequisites>
+      </value>
+    </nomatch>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+  <xpath>Defs/ThingDef[defName="ReelStorageWineRack"]/researchPrerequisites</xpath>
+  <value>
+      <researchPrerequisites><li>Ferny_Shelves</li></researchPrerequisites>
+  </value>
+  </Operation>
 </Patch>

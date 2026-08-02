@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<VEF.Buildings.HiddenDesignatorsDef>
+		<defName>ProgStorage_AdaptiveMOReelOverlap</defName>
+		<hiddenDesignators>
+			<li>DankPyon_Crate2x2d</li>
+			<li>DankPyon_Crate1x2d</li>
+		</hiddenDesignators>
+	</VEF.Buildings.HiddenDesignatorsDef>
+</Defs>

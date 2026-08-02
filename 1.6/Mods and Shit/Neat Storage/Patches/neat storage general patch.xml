@@ -2,6 +2,95 @@
 <Patch>        
 
 
+
+<!-- MAY 24 2026, New research projects  -->
+
+
+                <Operation Class="PatchOperationConditional">
+                  <xpath>/Defs/ThingDef[defName="sbz_HalfPallet"]/researchPrerequisites</xpath>
+                  <match Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="sbz_HalfPallet"]/researchPrerequisites</xpath>
+                    <value>
+                      <researchPrerequisites Inherit="false">
+                        <li>Ferny_Pallets</li>
+                      </researchPrerequisites> 
+                   </value>
+                  </match>
+                  <nomatch Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="sbz_HalfPallet"]</xpath>
+                    <value>
+                      <researchPrerequisites Inherit="false">
+                        <li>Ferny_Pallets</li>
+                      </researchPrerequisites> 
+                    </value>
+                  </nomatch>
+                </Operation>
+
+                <Operation Class="PatchOperationConditional">
+                  <xpath>/Defs/ThingDef[defName="sbz_MiniPallet"]/researchPrerequisites</xpath>
+                  <match Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="sbz_MiniPallet"]/researchPrerequisites</xpath>
+                    <value>
+                      <researchPrerequisites Inherit="false">
+                        <li>Ferny_Pallets</li>
+                      </researchPrerequisites> 
+                   </value>
+                  </match>
+                  <nomatch Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="sbz_MiniPallet"]</xpath>
+                    <value>
+                      <researchPrerequisites Inherit="false">
+                        <li>Ferny_Pallets</li>
+                      </researchPrerequisites> 
+                    </value>
+                  </nomatch>
+                </Operation>
+
+                <Operation Class="PatchOperationConditional">
+                  <xpath>/Defs/ThingDef[defName="sbz_Pallet"]/researchPrerequisites</xpath>
+                  <match Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="sbz_Pallet"]/researchPrerequisites</xpath>
+                    <value>
+                      <researchPrerequisites Inherit="false">
+                        <li>Ferny_Pallets</li>
+                      </researchPrerequisites> 
+                   </value>
+                  </match>
+                  <nomatch Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="sbz_Pallet"]</xpath>
+                    <value>
+                      <researchPrerequisites Inherit="false">
+                        <li>Ferny_Pallets</li>
+                      </researchPrerequisites> 
+                    </value>
+                  </nomatch>
+                </Operation>
+
+                <Operation Class="PatchOperationConditional">
+                  <success>Always</success>
+                  <xpath>/Defs/ThingDef[defName="sbz_Safe"]/researchPrerequisites</xpath>
+                  <match Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="sbz_Safe"]/researchPrerequisites</xpath>
+                    <value>
+                      <researchPrerequisites Inherit="false">
+                        <li>Ferny_Safe</li>
+                      </researchPrerequisites>
+                    </value>
+                  </match>
+                  <nomatch Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="sbz_Safe"]</xpath>
+                    <value>
+                      <researchPrerequisites Inherit="false">
+                        <li>Ferny_Safe</li>
+                      </researchPrerequisites>
+                    </value>
+                  </nomatch>
+                </Operation>
+
+
+
+
+
 <!-- RELABEL -->
                 <Operation Class="PatchOperationReplace">
                     <xpath>Defs/ThingDef[defName="sbz_Crate"]/label</xpath>

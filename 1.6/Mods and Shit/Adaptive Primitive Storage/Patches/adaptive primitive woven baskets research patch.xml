@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="ASF_WovenBasket"]/researchPrerequisites</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="ASF_WovenBasket"]/researchPrerequisites</xpath>
+			<value>
+				<researchPrerequisites>
+					<li>Ferny_WovenBaskets</li>
+				</researchPrerequisites>
+			</value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="ASF_WovenBasket"]</xpath>
+			<value>
+				<researchPrerequisites>
+					<li>Ferny_WovenBaskets</li>
+				</researchPrerequisites>
+			</value>
+		</nomatch>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="ASF_WovenBasketDouble"]/researchPrerequisites</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="ASF_WovenBasketDouble"]/researchPrerequisites</xpath>
+			<value>
+				<researchPrerequisites>
+					<li>Ferny_WovenBaskets</li>
+				</researchPrerequisites>
+			</value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="ASF_WovenBasketDouble"]</xpath>
+			<value>
+				<researchPrerequisites>
+					<li>Ferny_WovenBaskets</li>
+				</researchPrerequisites>
+			</value>
+		</nomatch>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="ASF_WovenBasketTriple"]/researchPrerequisites</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="ASF_WovenBasketTriple"]/researchPrerequisites</xpath>
+			<value>
+				<researchPrerequisites>
+					<li>Ferny_WovenBaskets</li>
+				</researchPrerequisites>
+			</value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="ASF_WovenBasketTriple"]</xpath>
+			<value>
+				<researchPrerequisites>
+					<li>Ferny_WovenBaskets</li>
+				</researchPrerequisites>
+			</value>
+		</nomatch>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="ASF_Granary"]/researchPrerequisites</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="ASF_Granary"]/researchPrerequisites</xpath>
+			<value>
+				<researchPrerequisites>
+					<li>Ferny_Granary</li>
+				</researchPrerequisites>
+			</value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="ASF_Granary"]</xpath>
+			<value>
+				<researchPrerequisites>
+					<li>Ferny_Granary</li>
+				</researchPrerequisites>
+			</value>
+		</nomatch>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="ASF_StorageTent"]/researchPrerequisites</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="ASF_StorageTent"]/researchPrerequisites</xpath>
+			<value>
+				<researchPrerequisites>
+					<li>Ferny_StorageTent</li>
+				</researchPrerequisites>
+			</value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="ASF_StorageTent"]</xpath>
+			<value>
+				<researchPrerequisites>
+					<li>Ferny_StorageTent</li>
+				</researchPrerequisites>
+			</value>
+		</nomatch>
+	</Operation>
+</Patch>

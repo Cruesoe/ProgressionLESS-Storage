@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+                <Operation Class="PatchOperationFindMod">
+                    <mods>
+                    <li>Adaptive Primitive Storage</li>
+                    </mods>
+                    <match Class="PatchOperationSequence">
+                    <operations>
+                    <li Class="PatchOperationAdd">
+                        <xpath>Defs</xpath>
+                        <value>
+							<VEF.Buildings.HiddenDesignatorsDef>
+								<defName>FernyMedievalOverhaulAdaptivePrimitiveProgStorage_HiddenDesignators</defName>
+								<hiddenDesignators>
+									<li>DankPyon_WoodLogs1x1c</li>
+                                    <li>DankPyon_WoodLogs2x2c</li>
+                                    <li>DankPyon_WoodLogs1x2c</li>
+								</hiddenDesignators>
+							</VEF.Buildings.HiddenDesignatorsDef>
+                        </value>
+                    </li>
+                    </operations>
+                    </match>
+                </Operation>
+
+</Patch>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="ASF_CoveredClayPot"]/researchPrerequisites</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="ASF_CoveredClayPot"]/researchPrerequisites</xpath>
+			<value>
+				<researchPrerequisites Inherit="false">
+					<li MayRequire="VanillaExpanded.VFEArt">VFE_Res_Pottery</li>
+				</researchPrerequisites>
+			</value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="ASF_CoveredClayPot"]</xpath>
+			<value>
+				<researchPrerequisites Inherit="false">
+					<li MayRequire="VanillaExpanded.VFEArt">VFE_Res_Pottery</li>
+				</researchPrerequisites>
+			</value>
+		</nomatch>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="ASF_UncoveredClayPot"]/researchPrerequisites</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="ASF_UncoveredClayPot"]/researchPrerequisites</xpath>
+			<value>
+				<researchPrerequisites Inherit="false">
+					<li MayRequire="VanillaExpanded.VFEArt">VFE_Res_Pottery</li>
+				</researchPrerequisites>
+			</value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="ASF_UncoveredClayPot"]</xpath>
+			<value>
+				<researchPrerequisites Inherit="false">
+					<li MayRequire="VanillaExpanded.VFEArt">VFE_Res_Pottery</li>
+				</researchPrerequisites>
+			</value>
+		</nomatch>
+	</Operation>
+</Patch>

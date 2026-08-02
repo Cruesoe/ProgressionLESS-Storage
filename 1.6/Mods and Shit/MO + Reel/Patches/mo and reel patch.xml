@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+<!-- Reel Overlap/Patches -->
+                <Operation Class="PatchOperationFindMod">
+                    <mods>
+                    <li>Reel's Expanded Storage</li>
+                    </mods>
+                    <match Class="PatchOperationSequence">
+                    <operations>
+                    <li Class="PatchOperationAdd">
+                        <xpath>Defs</xpath>
+                        <value>
+							<VEF.Buildings.HiddenDesignatorsDef>
+								<defName>FernyMedievalOverhaulReelStorageProgStorage_HiddenDesignators</defName>
+								<hiddenDesignators>
+									<li>ReelStorageHayBale</li>
+                                    <li>ReelStorageLargeWoodPile</li>
+                                    <li>ReelStorageWoodPile</li>
+                                    <li>ReelStorageStonePile</li>
+                                    <li>ReelStorageLargeStonePile</li>
+                                    <li>ReelStorageWoodChest</li>
+                                    <li>ReelStorageTanningRack</li>
+                                    <li>ReelStorageBookshelf</li>
+                                    <li>ReelStorageLargeWoodChest</li>
+								</hiddenDesignators>
+							</VEF.Buildings.HiddenDesignatorsDef>
+                        </value>
+                    </li>
+
+                        <!-- RESEARCH MERGING -->
+
+                        <li Class="PatchOperationReplace">
+                        <xpath>Defs/ThingDef[defName="ReelStorageWoodChest"]/researchPrerequisites</xpath>
+                        <value>
+                            <researchPrerequisites></researchPrerequisites>
+                        </value>
+                        </li>
+                        <li Class="PatchOperationReplace">
+                        <xpath>Defs/ThingDef[defName="ReelStorageHayBale"]/researchPrerequisites</xpath>
+                        <value>
+                            <researchPrerequisites></researchPrerequisites>
+                        </value>
+                        </li>
+                        <li Class="PatchOperationReplace">
+                        <xpath>Defs/ThingDef[defName="ReelStorageTanningRack"]/researchPrerequisites</xpath>
+                        <value>
+                            <researchPrerequisites></researchPrerequisites>
+                        </value>
+                        </li>
+                        <li Class="PatchOperationReplace">
+                        <xpath>Defs/ThingDef[defName="ReelStorageWoodPile"]/researchPrerequisites</xpath>
+                        <value>
+                            <researchPrerequisites></researchPrerequisites>
+                        </value>
+                        </li>
+                        <li Class="PatchOperationReplace">
+                        <xpath>Defs/ThingDef[defName="ReelStorageStonePile"]/researchPrerequisites</xpath>
+                        <value>
+                            <researchPrerequisites></researchPrerequisites>
+                        </value>
+                        </li>
+                        <li Class="PatchOperationReplace">
+                        <xpath>Defs/ThingDef[defName="ReelStorageBookshelf"]/researchPrerequisites</xpath>
+                        <value>
+                            <researchPrerequisites></researchPrerequisites>
+                        </value>
+                        </li>
+                        <li Class="PatchOperationReplace">
+                        <xpath>Defs/ThingDef[defName="ReelStorageLargeWoodPile"]/researchPrerequisites</xpath>
+                        <value>
+                            <researchPrerequisites></researchPrerequisites>
+                        </value>
+                        </li>
+                        <li Class="PatchOperationReplace">
+                        <xpath>Defs/ThingDef[defName="ReelStorageLargeStonePile"]/researchPrerequisites</xpath>
+                        <value>
+                            <researchPrerequisites></researchPrerequisites>
+                        </value>
+                        </li>
+                        <li Class="PatchOperationReplace">
+                        <xpath>Defs/ResearchProjectDef[defName="ReelIndustrialStorage"]/prerequisites</xpath>
+                        <value>
+                            <prerequisites>
+                            <li>Electricity</li>
+                            <li>DankPyon_RusticStorage</li>
+                            </prerequisites>
+                        </value>
+                        </li>
+                    <!-- new july 17 2025 -->
+                        <li Class="PatchOperationReplace">
+                        <xpath>Defs/ThingDef[defName="ReelStorageLargeWoodChest"]/researchPrerequisites</xpath>
+                        <value>
+                            <researchPrerequisites><li>DankPyon_RusticStorage</li></researchPrerequisites>
+                        </value>
+                        </li>
+
+                        <!-- ERASE SHIT -->
+
+                        <li Class="PatchOperationRemove">
+                        <xpath>Defs/ResearchProjectDef[defName="ReelNeolithicStorage"]</xpath>
+                        </li>
+                        <li Class="PatchOperationRemove">
+                        <xpath>Defs/ResearchProjectDef[defName="ReelMedievalStorage"]</xpath>
+                        </li>
+                    </operations>
+                    </match>
+                </Operation>
+
+
+<!-- FEEDDANOOB'S ERROR REMOVALS -->
+
+	<Operation Class="PatchOperationSequence">
+		<operations>
+			<li Class="PatchOperationConditional" MayRequire="DankPyon.Medieval.Overhaul,reel.expanded.storage">
+				<xpath>Defs/ThingDef[defName="ReelStorageLargeWoodChest"]</xpath>
+				<nomatch Class="PatchOperationConditional">
+					<xpath>Defs/AdaptiveStorage.GraphicsDef[@Name="ReelStorageLargeWoodChestBase"]</xpath>
+					<match Class="PatchOperationRemove">
+						<xpath>Defs/AdaptiveStorage.GraphicsDef[@*="ReelStorageLargeWoodChestBase"]</xpath>
+					</match>
+				</nomatch>
+			</li>
+			<li Class="PatchOperationConditional" MayRequire="DankPyon.Medieval.Overhaul,reel.expanded.storage">
+				<xpath>Defs/ResearchProjectDef[defName="ReelMedievalStorage"]</xpath>
+				<nomatch Class="PatchOperationConditional">
+					<xpath>Defs/ThingDef/researchPrerequisites[li="ReelMedievalStorage"]</xpath>
+					<match Class="PatchOperationRemove">
+						<xpath>Defs/ThingDef/researchPrerequisites/li[text()="ReelMedievalStorage"]</xpath>
+					</match>
+				</nomatch>
+			</li>
+		</operations>
+	</Operation>
+
+</Patch>
+
+        

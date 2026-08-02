@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ResearchProjectDef>
+		<defName>Ferny_Pallets</defName>
+		<label>Pallets</label>
+		<description>Build simple raised wooden platforms for storing resources more comfortably.</description>
+		<baseCost>200</baseCost>
+		<tab>Main</tab>
+		<techLevel>Neolithic</techLevel>
+		<researchViewX>15.00</researchViewX>
+		<researchViewY>6.00</researchViewY>
+		<prerequisites>
+			<li MayRequire="dankpyon.medieval.overhaul">DankPyon_Lumber</li>
+		</prerequisites>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef>
+		<defName>Ferny_Safe</defName>
+		<label>Safe</label>
+		<description>Build a secure storage unit for protecting your valuable metals.</description>
+		<baseCost>650</baseCost>
+		<tab>Main</tab>
+		<techLevel>Industrial</techLevel>
+		<researchViewX>15.00</researchViewX>
+		<researchViewY>6.00</researchViewY>
+		<prerequisites>
+			<li>Smithing</li>
+		</prerequisites>
+	</ResearchProjectDef>
+
+
+</Defs>

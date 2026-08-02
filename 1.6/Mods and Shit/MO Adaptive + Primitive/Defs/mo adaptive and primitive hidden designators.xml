@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<VEF.Buildings.HiddenDesignatorsDef>
+		<defName>ProgStorage_AdaptivePrimitiveAdaptiveMOOverlap</defName>
+		<hiddenDesignators>
+			<li>ASF_LargeLogPile</li>
+			<li>ASF_SmallLogPile</li>
+		</hiddenDesignators>
+	</VEF.Buildings.HiddenDesignatorsDef>
+</Defs>
