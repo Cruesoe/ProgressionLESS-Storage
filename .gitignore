@@ -1,0 +1,11 @@
+**/bin/
+**/obj/
+**/.vs/
+*.user
+*.pdb
+*.slnx
+.DS_Store
+Directory.Build.props
+Directory.Build.targets
+AGENTS.md
+CLAUDE.md

@@ -1,54 +1,62 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
-	<name>Progression: Storage</name>
-	<author>ferny</author>
-	<packageId>ferny.progressionstorage</packageId>
-	<supportedVersions>
-		<li>1.5</li>
-		<li>1.6</li>
-	</supportedVersions>
-	<modDependencies>
-		<li>
-			<packageId>adaptive.storage.framework</packageId>
-			<displayName>Adaptive Storage Framework</displayName>
-			<steamWorkshopUrl>steam://url/CommunityFilePage/3033901359</steamWorkshopUrl>
-		</li>
-		<li>
-			<packageId>OskarPotocki.VanillaFactionsExpanded.Core</packageId>
-			<displayName>Vanilla Expanded Framework</displayName>
-			<steamWorkshopUrl>steam://url/CommunityFilePage/1854607105</steamWorkshopUrl>
-		</li>
-	</modDependencies>
-	<description>Integrates storage mods into Vanilla progression.</description>
-	<loadAfter>
-		<li>Ludeon.Rimworld</li>
-		<li>Ludeon.Rimworld.Royalty</li>
-		<li>Ludeon.Rimworld.Ideology</li>
-		<li>Ludeon.Rimworld.Biotech</li>
-		<li>Ludeon.Rimworld.Anomaly</li>
-		<li>Ludeon.RimWorld.Odyssey</li>
-		<li>reel.expanded.storage</li>
-		<li>dankpyon.medieval.overhaul</li>
-		<li>ferny.progressionaesthetics</li>
-		<li>ferny.progressionfurniture</li>
-		<li>VanillaExpanded.Recycling</li>
-		<li>VanillaExpanded.VFECore</li>
-		<li>VanillaExpanded.VFEArt</li>
-		<li>ferny.propscore</li>
-		<li>ferny.fuckextfurniture</li>
-		<li>Adamas.VendingMachines</li>
-		<li>silkcircuit.passitthroughthewindow</li>
-		<li>sarg.alphabooks</li>
-		<li>adaptive.primitivestorage</li>
-		<li>sbz.neatstorage</li>
-		<li>OskarPotocki.VFE.Mechanoid</li>
-		<li>oskarpotocki.vfe.medieval2</li>
-		<li>jdgg.adaptive.cargoholds</li>
-		<li>sbz.gravshipstorage</li>
-		<li>eeg.moxasf</li>
-		<li>ponpeco.PFSF</li>
-		<li>ReBuild.COTR.DoorsAndCorners</li>
-		<li>sbz.Bookcase</li>
-		<li>natsuki.manipulatorbeam</li>
-	</loadAfter>
+  <name>ProgressionLESS: Storage</name>
+  <author>Cruesoe</author>
+  <packageId>crues.progressionlessstorage</packageId>
+  <supportedVersions>
+    <li>1.5</li>
+    <li>1.6</li>
+  </supportedVersions>
+  <description>Integrates storage mods into vanilla progression.
+
+Forked from Progression: Storage by ferny: https://steamcommunity.com/sharedfiles/filedetails/?id=3292746186
+Huge thanks to ferny for the original mod and all the Progression work this builds on. Replaces the original; do not use both.
+
+For a really good modpack, check out The Progression Modpack: https://steamcommunity.com/sharedfiles/filedetails/?id=3521297585</description>
+  <modDependencies>
+    <li>
+      <packageId>adaptive.storage.framework</packageId>
+      <displayName>Adaptive Storage Framework</displayName>
+      <steamWorkshopUrl>steam://url/CommunityFilePage/3033901359</steamWorkshopUrl>
+    </li>
+    <li>
+      <packageId>OskarPotocki.VanillaFactionsExpanded.Core</packageId>
+      <displayName>Vanilla Expanded Framework</displayName>
+      <steamWorkshopUrl>steam://url/CommunityFilePage/1854607105</steamWorkshopUrl>
+    </li>
+  </modDependencies>
+  <incompatibleWith>
+    <li>ferny.progressionstorage</li>
+  </incompatibleWith>
+  <loadAfter>
+    <li>Ludeon.RimWorld</li>
+    <li>Ludeon.RimWorld.Royalty</li>
+    <li>Ludeon.RimWorld.Ideology</li>
+    <li>Ludeon.RimWorld.Biotech</li>
+    <li>Ludeon.RimWorld.Anomaly</li>
+    <li>Ludeon.RimWorld.Odyssey</li>
+    <li>reel.expanded.storage</li>
+    <li>dankpyon.medieval.overhaul</li>
+    <li>ferny.progressionaesthetics</li>
+    <li>ferny.progressionfurniture</li>
+    <li>VanillaExpanded.Recycling</li>
+    <li>VanillaExpanded.VFECore</li>
+    <li>VanillaExpanded.VFEArt</li>
+    <li>ferny.propscore</li>
+    <li>ferny.fuckextfurniture</li>
+    <li>Adamas.VendingMachines</li>
+    <li>silkcircuit.passitthroughthewindow</li>
+    <li>sarg.alphabooks</li>
+    <li>adaptive.primitivestorage</li>
+    <li>sbz.neatstorage</li>
+    <li>OskarPotocki.VFE.Mechanoid</li>
+    <li>oskarpotocki.vfe.medieval2</li>
+    <li>jdgg.adaptive.cargoholds</li>
+    <li>sbz.gravshipstorage</li>
+    <li>eeg.moxasf</li>
+    <li>ponpeco.PFSF</li>
+    <li>ReBuild.COTR.DoorsAndCorners</li>
+    <li>sbz.Bookcase</li>
+    <li>natsuki.manipulatorbeam</li>
+  </loadAfter>
 </ModMetaData>
