@@ -87,6 +87,48 @@
                   </nomatch>
                 </Operation>
 
+                <Operation Class="PatchOperationConditional">
+                  <success>Always</success>
+                  <xpath>/Defs/ThingDef[defName="sbz_WideHangerShelf"]/researchPrerequisites</xpath>
+                  <match Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="sbz_WideHangerShelf"]/researchPrerequisites</xpath>
+                    <value>
+                      <researchPrerequisites Inherit="false">
+                        <li>Ferny_Shelves</li>
+                      </researchPrerequisites>
+                    </value>
+                  </match>
+                  <nomatch Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="sbz_WideHangerShelf"]</xpath>
+                    <value>
+                      <researchPrerequisites Inherit="false">
+                        <li>Ferny_Shelves</li>
+                      </researchPrerequisites>
+                    </value>
+                  </nomatch>
+                </Operation>
+
+                <Operation Class="PatchOperationConditional">
+                  <success>Always</success>
+                  <xpath>/Defs/ThingDef[defName="sbz_HangerShelf"]/researchPrerequisites</xpath>
+                  <match Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="sbz_HangerShelf"]/researchPrerequisites</xpath>
+                    <value>
+                      <researchPrerequisites Inherit="false">
+                        <li>Ferny_Shelves</li>
+                      </researchPrerequisites>
+                    </value>
+                  </match>
+                  <nomatch Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="sbz_HangerShelf"]</xpath>
+                    <value>
+                      <researchPrerequisites Inherit="false">
+                        <li>Ferny_Shelves</li>
+                      </researchPrerequisites>
+                    </value>
+                  </nomatch>
+                </Operation>
+
 
 
 
@@ -160,7 +202,7 @@
                         <xpath>Defs/ThingDef[@Name="sbzDisplayShelfBase"]/researchPrerequisites</xpath>
                         <value>
                             <researchPrerequisites>
-                                <li>ReelNeolithicStorage</li>
+                                <li>Ferny_Shelves</li>
                             </researchPrerequisites>
                         </value>
                     </li>
@@ -168,7 +210,7 @@
                         <xpath>Defs/ThingDef[@Name="sbzSmallDisplayShelfBase"]/researchPrerequisites</xpath>
                         <value>
                             <researchPrerequisites>
-                                <li>ReelNeolithicStorage</li>
+                                <li>Ferny_Shelves</li>
                             </researchPrerequisites>
                         </value>
                     </li>
@@ -223,7 +265,7 @@
                         <xpath>Defs/ThingDef[@Name="sbzDisplayShelfBase"]/researchPrerequisites</xpath>
                         <value>
                             <researchPrerequisites>
-                                <li>DankPyon_RusticStorage</li>
+                                <li>Ferny_Shelves</li>
                             </researchPrerequisites>
                         </value>
                     </li>
@@ -231,12 +273,33 @@
                         <xpath>Defs/ThingDef[@Name="sbzSmallDisplayShelfBase"]/researchPrerequisites</xpath>
                         <value>
                             <researchPrerequisites>
-                                <li>DankPyon_RusticStorage</li>
+                                <li>Ferny_Shelves</li>
                             </researchPrerequisites>
                         </value>
                     </li>
                 </operations>
             </match>
+	</Operation>
+
+	<!-- Drum research -->
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="sbz_Drum"]/researchPrerequisites</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="sbz_Drum"]/researchPrerequisites</xpath>
+			<value>
+				<researchPrerequisites Inherit="false">
+					<li>Ferny_Drum</li>
+				</researchPrerequisites>
+			</value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="sbz_Drum"]</xpath>
+			<value>
+				<researchPrerequisites Inherit="false">
+					<li>Ferny_Drum</li>
+				</researchPrerequisites>
+			</value>
+		</nomatch>
 	</Operation>
 
 </Patch>

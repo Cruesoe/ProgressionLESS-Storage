@@ -48,5 +48,7 @@
 		<li IfModActiveAll="dankpyon.medieval.overhaul,ferny.propscore">1.6/Mods and Shit/MO + More Prop Categories</li>
 		<li IfModActive="ponpeco.PFSF">1.6/Mods and Shit/Ponpeco Furnitures Sci-Fi</li>
 		<li IfModActiveAll="ponpeco.PFSF,ReBuild.COTR.DoorsAndCorners">1.6/Mods and Shit/Ponpeco Furnitures Sci-Fi + ReBuild</li>
+		<li IfModActive="sbz.Bookcase">1.6/Mods and Shit/SBZ Bookcase</li>
+    <li IfModActive="natsuki.manipulatorbeam">1.6/Mods and Shit/Manipulator Beam Emitter</li>
   </v1.6>
 </loadFolders>

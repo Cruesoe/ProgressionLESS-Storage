@@ -30,4 +30,18 @@
 	</ResearchProjectDef>
 
 
+	<ResearchProjectDef>
+		<defName>Ferny_Drum</defName>
+		<label>Drum</label>
+		<description>Build metal drums for compact storage of resources.</description>
+		<baseCost>400</baseCost>
+		<tab>Main</tab>
+		<techLevel>Industrial</techLevel>
+		<researchViewX>16.00</researchViewX>
+		<researchViewY>6.00</researchViewY>
+		<prerequisites>
+			<li MayRequire="reel.expanded.storage">ReelIndustrialStorage</li>
+		</prerequisites>
+	</ResearchProjectDef>
+
 </Defs>

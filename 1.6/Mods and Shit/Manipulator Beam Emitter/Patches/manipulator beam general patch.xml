@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="MB_ManipulatorBeamEmitter"]/researchPrerequisites</xpath>
+		<value>
+			<researchPrerequisites Inherit="false">
+				<li>Ferny_ManipulatorBeamEmitter</li>
+			</researchPrerequisites>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="MB_ManipulatorBeamEmitterAuto"]/researchPrerequisites</xpath>
+		<value>
+			<researchPrerequisites Inherit="false">
+				<li>Ferny_AutomatedManipulatorBeamEmitter</li>
+			</researchPrerequisites>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="MB_ManipulatorBeamEmitter"]/costList</xpath>
+		<value>
+			<costList Inherit="false">
+				<Steel>800</Steel>
+				<Plasteel>100</Plasteel>
+				<ComponentSpacer>100</ComponentSpacer>
+			</costList>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="MB_ManipulatorBeamEmitterAuto"]/costList</xpath>
+		<value>
+			<costList Inherit="false">
+				<Steel>800</Steel>
+				<Plasteel>100</Plasteel>
+				<ComponentSpacer>100</ComponentSpacer>
+				<AIPersonaCore>1</AIPersonaCore>
+			</costList>
+		</value>
+	</Operation>
+</Patch>

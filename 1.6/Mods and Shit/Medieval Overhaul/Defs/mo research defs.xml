@@ -16,6 +16,20 @@
   </ResearchProjectDef>
 
   <ResearchProjectDef>
+    <defName>Ferny_Bales</defName>
+    <label>Bales</label>
+    <description>Build flax, hay, and straw bales for compact resource storage.</description>
+    <baseCost>250</baseCost>
+    <tab>Main</tab>
+    <techLevel>Neolithic</techLevel>
+    <researchViewX>15.00</researchViewX>
+    <researchViewY>8.00</researchViewY>
+    <prerequisites>
+      <li MayRequire="oskarpotocki.vfe.tribals">VFET_Agriculture</li>
+    </prerequisites>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef>
     <defName>Ferny_Chest</defName>
     <label>Chest</label>
     <description>Build a detailed wooden chest to store items.</description>

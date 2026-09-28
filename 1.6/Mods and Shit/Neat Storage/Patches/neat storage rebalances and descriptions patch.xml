@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 <Patch>
-	<!-- Research: bases to ComplexFurniture -->
+	<!-- Research: crates to ComplexFurniture, display shelves to Shelves -->
 	<Operation Class="PatchOperationReplace">
 		<xpath>Defs/ThingDef[@Name="sbzCrateBase"]/researchPrerequisites</xpath>
 		<value>
@@ -13,7 +13,7 @@
 		<xpath>Defs/ThingDef[@Name="sbzDisplayShelfBase"]/researchPrerequisites</xpath>
 		<value>
 			<researchPrerequisites>
-				<li>ComplexFurniture</li>
+				<li>Ferny_Shelves</li>
 			</researchPrerequisites>
 		</value>
 	</Operation>
@@ -21,7 +21,7 @@
 		<xpath>Defs/ThingDef[@Name="sbzSmallDisplayShelfBase"]/researchPrerequisites</xpath>
 		<value>
 			<researchPrerequisites>
-				<li>ComplexFurniture</li>
+				<li>Ferny_Shelves</li>
 			</researchPrerequisites>
 		</value>
 	</Operation>

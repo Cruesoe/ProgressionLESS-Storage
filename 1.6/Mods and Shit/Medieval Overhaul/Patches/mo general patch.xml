@@ -1147,33 +1147,33 @@
     <operations>
       <li Class="PatchOperationConditional">
         <xpath>Defs/ThingDef[defName="DankPyon_Bale1x2c"]/researchPrerequisites</xpath>
-        <match Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="DankPyon_Bale1x2c"]/researchPrerequisites</xpath><value><researchPrerequisites Inherit="false"><li MayRequire="oskarpotocki.vfe.tribals">VFET_Agriculture</li></researchPrerequisites></value></match>
-        <nomatch Class="PatchOperationAdd"><xpath>Defs/ThingDef[defName="DankPyon_Bale1x2c"]</xpath><value><researchPrerequisites Inherit="false"><li MayRequire="oskarpotocki.vfe.tribals">VFET_Agriculture</li></researchPrerequisites></value></nomatch>
+        <match Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="DankPyon_Bale1x2c"]/researchPrerequisites</xpath><value><researchPrerequisites Inherit="false"><li>Ferny_Bales</li></researchPrerequisites></value></match>
+        <nomatch Class="PatchOperationAdd"><xpath>Defs/ThingDef[defName="DankPyon_Bale1x2c"]</xpath><value><researchPrerequisites Inherit="false"><li>Ferny_Bales</li></researchPrerequisites></value></nomatch>
       </li>
       <li Class="PatchOperationConditional">
         <xpath>Defs/ThingDef[defName="DankPyon_HayBale2x2c"]/researchPrerequisites</xpath>
-        <match Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="DankPyon_HayBale2x2c"]/researchPrerequisites</xpath><value><researchPrerequisites Inherit="false"><li MayRequire="oskarpotocki.vfe.tribals">VFET_Agriculture</li></researchPrerequisites></value></match>
-        <nomatch Class="PatchOperationAdd"><xpath>Defs/ThingDef[defName="DankPyon_HayBale2x2c"]</xpath><value><researchPrerequisites Inherit="false"><li MayRequire="oskarpotocki.vfe.tribals">VFET_Agriculture</li></researchPrerequisites></value></nomatch>
+        <match Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="DankPyon_HayBale2x2c"]/researchPrerequisites</xpath><value><researchPrerequisites Inherit="false"><li>Ferny_Bales</li></researchPrerequisites></value></match>
+        <nomatch Class="PatchOperationAdd"><xpath>Defs/ThingDef[defName="DankPyon_HayBale2x2c"]</xpath><value><researchPrerequisites Inherit="false"><li>Ferny_Bales</li></researchPrerequisites></value></nomatch>
       </li>
       <li Class="PatchOperationConditional">
         <xpath>Defs/ThingDef[defName="DankPyon_StrawBale1x2c"]/researchPrerequisites</xpath>
-        <match Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="DankPyon_StrawBale1x2c"]/researchPrerequisites</xpath><value><researchPrerequisites Inherit="false"><li MayRequire="oskarpotocki.vfe.tribals">VFET_Agriculture</li></researchPrerequisites></value></match>
-        <nomatch Class="PatchOperationAdd"><xpath>Defs/ThingDef[defName="DankPyon_StrawBale1x2c"]</xpath><value><researchPrerequisites Inherit="false"><li MayRequire="oskarpotocki.vfe.tribals">VFET_Agriculture</li></researchPrerequisites></value></nomatch>
+        <match Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="DankPyon_StrawBale1x2c"]/researchPrerequisites</xpath><value><researchPrerequisites Inherit="false"><li>Ferny_Bales</li></researchPrerequisites></value></match>
+        <nomatch Class="PatchOperationAdd"><xpath>Defs/ThingDef[defName="DankPyon_StrawBale1x2c"]</xpath><value><researchPrerequisites Inherit="false"><li>Ferny_Bales</li></researchPrerequisites></value></nomatch>
       </li>
       <li Class="PatchOperationConditional">
         <xpath>Defs/ThingDef[defName="DankPyon_StrawBale2x2c"]/researchPrerequisites</xpath>
-        <match Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="DankPyon_StrawBale2x2c"]/researchPrerequisites</xpath><value><researchPrerequisites Inherit="false"><li MayRequire="oskarpotocki.vfe.tribals">VFET_Agriculture</li></researchPrerequisites></value></match>
-        <nomatch Class="PatchOperationAdd"><xpath>Defs/ThingDef[defName="DankPyon_StrawBale2x2c"]</xpath><value><researchPrerequisites Inherit="false"><li MayRequire="oskarpotocki.vfe.tribals">VFET_Agriculture</li></researchPrerequisites></value></nomatch>
+        <match Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="DankPyon_StrawBale2x2c"]/researchPrerequisites</xpath><value><researchPrerequisites Inherit="false"><li>Ferny_Bales</li></researchPrerequisites></value></match>
+        <nomatch Class="PatchOperationAdd"><xpath>Defs/ThingDef[defName="DankPyon_StrawBale2x2c"]</xpath><value><researchPrerequisites Inherit="false"><li>Ferny_Bales</li></researchPrerequisites></value></nomatch>
       </li>
       <li Class="PatchOperationConditional">
         <xpath>Defs/ThingDef[defName="DankPyon_FlaxBale1x2c"]/researchPrerequisites</xpath>
-        <match Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="DankPyon_FlaxBale1x2c"]/researchPrerequisites</xpath><value><researchPrerequisites Inherit="false"><li MayRequire="oskarpotocki.vfe.tribals">VFET_Agriculture</li></researchPrerequisites></value></match>
-        <nomatch Class="PatchOperationAdd"><xpath>Defs/ThingDef[defName="DankPyon_FlaxBale1x2c"]</xpath><value><researchPrerequisites Inherit="false"><li MayRequire="oskarpotocki.vfe.tribals">VFET_Agriculture</li></researchPrerequisites></value></nomatch>
+        <match Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="DankPyon_FlaxBale1x2c"]/researchPrerequisites</xpath><value><researchPrerequisites Inherit="false"><li>Ferny_Bales</li></researchPrerequisites></value></match>
+        <nomatch Class="PatchOperationAdd"><xpath>Defs/ThingDef[defName="DankPyon_FlaxBale1x2c"]</xpath><value><researchPrerequisites Inherit="false"><li>Ferny_Bales</li></researchPrerequisites></value></nomatch>
       </li>
       <li Class="PatchOperationConditional">
         <xpath>Defs/ThingDef[defName="DankPyon_FlaxBale2x2c"]/researchPrerequisites</xpath>
-        <match Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="DankPyon_FlaxBale2x2c"]/researchPrerequisites</xpath><value><researchPrerequisites Inherit="false"><li MayRequire="oskarpotocki.vfe.tribals">VFET_Agriculture</li></researchPrerequisites></value></match>
-        <nomatch Class="PatchOperationAdd"><xpath>Defs/ThingDef[defName="DankPyon_FlaxBale2x2c"]</xpath><value><researchPrerequisites Inherit="false"><li MayRequire="oskarpotocki.vfe.tribals">VFET_Agriculture</li></researchPrerequisites></value></nomatch>
+        <match Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="DankPyon_FlaxBale2x2c"]/researchPrerequisites</xpath><value><researchPrerequisites Inherit="false"><li>Ferny_Bales</li></researchPrerequisites></value></match>
+        <nomatch Class="PatchOperationAdd"><xpath>Defs/ThingDef[defName="DankPyon_FlaxBale2x2c"]</xpath><value><researchPrerequisites Inherit="false"><li>Ferny_Bales</li></researchPrerequisites></value></nomatch>
       </li>
       <li Class="PatchOperationConditional">
         <xpath>Defs/ThingDef[defName="DankPyon_RackMixed"]/researchPrerequisites</xpath>

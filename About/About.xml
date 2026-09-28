@@ -48,5 +48,7 @@
 		<li>eeg.moxasf</li>
 		<li>ponpeco.PFSF</li>
 		<li>ReBuild.COTR.DoorsAndCorners</li>
+		<li>sbz.Bookcase</li>
+		<li>natsuki.manipulatorbeam</li>
 	</loadAfter>
 </ModMetaData>

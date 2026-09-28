@@ -2,4 +2,24 @@
 <Patch>              
 <!-- VFEM2 PATCHES -->
 
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="VFEM2_AilmentsShelf"]/researchPrerequisites</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="VFEM2_AilmentsShelf"]/researchPrerequisites</xpath>
+      <value>
+        <researchPrerequisites Inherit="false">
+          <li>Ferny_Shelves</li>
+        </researchPrerequisites>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="VFEM2_AilmentsShelf"]</xpath>
+      <value>
+        <researchPrerequisites Inherit="false">
+          <li>Ferny_Shelves</li>
+        </researchPrerequisites>
+      </value>
+    </nomatch>
+  </Operation>
+
 </Patch>
