@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<ResearchProjectDef>
+	<ResearchProjectDef MayRequireAnyOf="dankpyon.medieval.overhaul,reel.expanded.storage,sbz.NeatStorage">
 		<defName>Ferny_Boxes</defName>
 		<label>Crates and chests</label>
 		<description>Build wooden crates, barrels, chests, strongboxes and meat hooks to store resources.</description>

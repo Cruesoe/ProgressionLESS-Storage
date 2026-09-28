@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='utf-8'?>
 <Patch>
-	<!-- Research: crates to ComplexFurniture, display shelves to Shelves -->
+	<!-- Research: crates to Crates and chests, display shelves to Basic storage -->
 	<Operation Class="PatchOperationReplace">
 		<xpath>Defs/ThingDef[@Name="sbzCrateBase"]/researchPrerequisites</xpath>
 		<value>
 			<researchPrerequisites>
-				<li>ComplexFurniture</li>
+				<li>Ferny_Boxes</li>
 			</researchPrerequisites>
 		</value>
 	</Operation>

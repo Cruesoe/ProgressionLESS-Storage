@@ -200,7 +200,7 @@
                         <xpath>Defs/ThingDef[@Name="sbzCrateBase"]/researchPrerequisites</xpath>
                         <value>
                             <researchPrerequisites>
-                                <li>ReelNeolithicStorage</li>
+                                <li>Ferny_Boxes</li>
                             </researchPrerequisites>
                         </value>
                     </li>
@@ -263,7 +263,7 @@
                         <xpath>Defs/ThingDef[@Name="sbzCrateBase"]/researchPrerequisites</xpath>
                         <value>
                             <researchPrerequisites>
-                                <li>DankPyon_RusticStorage</li>
+                                <li>Ferny_Boxes</li>
                             </researchPrerequisites>
                         </value>
                     </li>

@@ -39,8 +39,6 @@
 		<li IfModActiveAll="sbz.NeatStorageFridge,reel.expanded.storage">1.6/Mods and Shit/SBZ Fridge + Reel</li>
 		<li IfModActiveAll="eeg.moxasf,adaptive.primitivestorage">1.6/Mods and Shit/MO Adaptive + Primitive</li>
 		<li IfModActiveAll="eeg.moxasf,reel.expanded.storage">1.6/Mods and Shit/MO Adaptive + Reel</li>
-		<li IfModActive="dankpyon.medieval.overhaul">1.6/Mods and Shit/MO or Reel</li>
-		<li IfModActive="reel.expanded.storage" IfModNotActive="dankpyon.medieval.overhaul">1.6/Mods and Shit/MO or Reel</li>
 		<li IfModActiveAll="dankpyon.medieval.overhaul,reel.expanded.storage">1.6/Mods and Shit/MO + Reel</li>
 		<li IfModActiveAll="dankpyon.medieval.overhaul,adaptive.primitivestorage">1.6/Mods and Shit/MO + Primitive</li>
 		<li IfModActiveAll="dankpyon.medieval.overhaul,ferny.propscore">1.6/Mods and Shit/MO + More Prop Categories</li>
