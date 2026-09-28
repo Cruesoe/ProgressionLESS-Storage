@@ -276,7 +276,8 @@
       <xpath>Defs/ThingDef[defName="DankPyon_SackEmpty"]/researchPrerequisites</xpath>
       <value>
         <researchPrerequisites Inherit="false">
-          <li>Ferny_Sacks</li>
+          <li>Ferny_Shelves</li>
+          <li MayRequire="dankpyon.medieval.overhaul">DankPyon_TextileSpinning</li>
         </researchPrerequisites>
       </value>
     </match>
@@ -284,7 +285,8 @@
       <xpath>Defs/ThingDef[defName="DankPyon_SackEmpty"]</xpath>
       <value>
         <researchPrerequisites Inherit="false">
-          <li>Ferny_Sacks</li>
+          <li>Ferny_Shelves</li>
+          <li MayRequire="dankpyon.medieval.overhaul">DankPyon_TextileSpinning</li>
         </researchPrerequisites>
       </value>
     </nomatch>

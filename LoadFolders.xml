@@ -36,8 +36,6 @@
 		<li IfModActive="eeg.moxasf">1.6/Mods and Shit/MO Adaptive Storage</li>
 		<li IfModActive="Ludeon.RimWorld.Odyssey">1.6/Mods and Shit/Odyssey</li>
 		<li IfModActiveAll="sbz.NeatStorage,reel.expanded.storage">1.6/Mods and Shit/Neat Storage + Reel</li>
-		<li IfModActive="sbz.NeatStorageFridge">1.6/Mods and Shit/SBZ Fridge or Reel</li>
-		<li IfModActive="reel.expanded.storage" IfModNotActive="sbz.NeatStorageFridge">1.6/Mods and Shit/SBZ Fridge or Reel</li>
 		<li IfModActiveAll="sbz.NeatStorageFridge,reel.expanded.storage">1.6/Mods and Shit/SBZ Fridge + Reel</li>
 		<li IfModActiveAll="eeg.moxasf,adaptive.primitivestorage">1.6/Mods and Shit/MO Adaptive + Primitive</li>
 		<li IfModActiveAll="eeg.moxasf,reel.expanded.storage">1.6/Mods and Shit/MO Adaptive + Reel</li>

@@ -4,7 +4,7 @@
 		<xpath>/Defs/ThingDef[@Name="sbzFridgeBase"]/researchPrerequisites</xpath>
 		<value>
 			<researchPrerequisites>
-				<li>Ferny_Fridges</li>
+				<li>AirConditioning</li>
 			</researchPrerequisites>
 		</value>
 	</Operation>
@@ -12,7 +12,7 @@
 		<xpath>/Defs/ThingDef[defName="sbz_CorpseFridge"]/researchPrerequisites</xpath>
 		<value>
 			<researchPrerequisites>
-				<li>Ferny_Fridges</li>
+				<li>AirConditioning</li>
 			</researchPrerequisites>
 		</value>
 	</Operation>

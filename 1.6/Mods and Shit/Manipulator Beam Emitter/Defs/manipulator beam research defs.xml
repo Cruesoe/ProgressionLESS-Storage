@@ -3,7 +3,7 @@
 	<ResearchProjectDef>
 		<defName>Ferny_ManipulatorBeamEmitter</defName>
 		<label>Manipulator beam emitter</label>
-		<description>Build a console-operated emitter that moves items with manipulator beams.</description>
+		<description>Build manipulator beam emitters that move items with manipulator beams, operated from a console or automated.</description>
 		<baseCost>80000</baseCost>
 		<tab>Main</tab>
 		<techLevel>Ultra</techLevel>
@@ -11,20 +11,6 @@
 		<researchViewY>6</researchViewY>
 		<prerequisites>
 			<li>AdvancedFabrication</li>
-		</prerequisites>
-	</ResearchProjectDef>
-
-	<ResearchProjectDef>
-		<defName>Ferny_AutomatedManipulatorBeamEmitter</defName>
-		<label>Automated manipulator beam emitter</label>
-		<description>Automate manipulator beam emitters to move items without an operator.</description>
-		<baseCost>30000</baseCost>
-		<tab>Main</tab>
-		<techLevel>Ultra</techLevel>
-		<researchViewX>21</researchViewX>
-		<researchViewY>6</researchViewY>
-		<prerequisites>
-			<li>Ferny_ManipulatorBeamEmitter</li>
 		</prerequisites>
 	</ResearchProjectDef>
 </Defs>

@@ -13,7 +13,7 @@
 		<xpath>Defs/ThingDef[defName="MB_ManipulatorBeamEmitterAuto"]/researchPrerequisites</xpath>
 		<value>
 			<researchPrerequisites Inherit="false">
-				<li>Ferny_AutomatedManipulatorBeamEmitter</li>
+				<li>Ferny_ManipulatorBeamEmitter</li>
 			</researchPrerequisites>
 		</value>
 	</Operation>

@@ -3,44 +3,16 @@
 
 	<ResearchProjectDef>
 		<defName>Ferny_Boxes</defName>
-		<label>Boxes</label>
-		<description>Build different types of wooden boxes to store resources.</description>
+		<label>Crates and chests</label>
+		<description>Build wooden crates, barrels, chests, strongboxes and meat hooks to store resources.</description>
 		<baseCost>400</baseCost>
 		<tab>Main</tab>
 		<techLevel>Medieval</techLevel>
 		<researchViewX>15.00</researchViewX>
 		<researchViewY>6.00</researchViewY>
 		<prerequisites>
-			<li MayRequire="sbz.neatstorage">Ferny_Pallets</li>
+			<li MayRequire="sbz.neatstorage">Ferny_Shelves</li>
 		</prerequisites>
 	</ResearchProjectDef>
-
-	<ResearchProjectDef>
-		<defName>Ferny_Barrels</defName>
-		<label>Barrels</label>
-		<description>Build different types of wooden barrels to store resources.</description>
-		<baseCost>300</baseCost>
-		<tab>Main</tab>
-		<techLevel>Medieval</techLevel>
-		<researchViewX>15.00</researchViewX>
-		<researchViewY>6.00</researchViewY>
-		<prerequisites>
-			<li>Ferny_Boxes</li>
-		</prerequisites>
-	</ResearchProjectDef>
-
-  <ResearchProjectDef>
-    <defName>Ferny_WeaponRack</defName>
-    <label>Weapon rack</label>
-    <description>Build simple weapon racks to keep arms organized and accessible.</description>
-    <baseCost>200</baseCost>
-    <tab>Main</tab>
-    <techLevel>Neolithic</techLevel>
-    <researchViewX>16.00</researchViewX>
-    <researchViewY>7.00</researchViewY>
-    <prerequisites>
-      <li>Ferny_Shelves</li>
-    </prerequisites>
-  </ResearchProjectDef>
 
 </Defs>

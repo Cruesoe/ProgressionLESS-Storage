@@ -12,7 +12,8 @@
                     <xpath>/Defs/ThingDef[defName="sbz_HalfPallet"]/researchPrerequisites</xpath>
                     <value>
                       <researchPrerequisites Inherit="false">
-                        <li>Ferny_Pallets</li>
+                        <li>Ferny_Shelves</li>
+                        <li MayRequire="dankpyon.medieval.overhaul">DankPyon_Lumber</li>
                       </researchPrerequisites> 
                    </value>
                   </match>
@@ -20,7 +21,8 @@
                     <xpath>/Defs/ThingDef[defName="sbz_HalfPallet"]</xpath>
                     <value>
                       <researchPrerequisites Inherit="false">
-                        <li>Ferny_Pallets</li>
+                        <li>Ferny_Shelves</li>
+                        <li MayRequire="dankpyon.medieval.overhaul">DankPyon_Lumber</li>
                       </researchPrerequisites> 
                     </value>
                   </nomatch>
@@ -32,7 +34,8 @@
                     <xpath>/Defs/ThingDef[defName="sbz_MiniPallet"]/researchPrerequisites</xpath>
                     <value>
                       <researchPrerequisites Inherit="false">
-                        <li>Ferny_Pallets</li>
+                        <li>Ferny_Shelves</li>
+                        <li MayRequire="dankpyon.medieval.overhaul">DankPyon_Lumber</li>
                       </researchPrerequisites> 
                    </value>
                   </match>
@@ -40,7 +43,8 @@
                     <xpath>/Defs/ThingDef[defName="sbz_MiniPallet"]</xpath>
                     <value>
                       <researchPrerequisites Inherit="false">
-                        <li>Ferny_Pallets</li>
+                        <li>Ferny_Shelves</li>
+                        <li MayRequire="dankpyon.medieval.overhaul">DankPyon_Lumber</li>
                       </researchPrerequisites> 
                     </value>
                   </nomatch>
@@ -52,7 +56,8 @@
                     <xpath>/Defs/ThingDef[defName="sbz_Pallet"]/researchPrerequisites</xpath>
                     <value>
                       <researchPrerequisites Inherit="false">
-                        <li>Ferny_Pallets</li>
+                        <li>Ferny_Shelves</li>
+                        <li MayRequire="dankpyon.medieval.overhaul">DankPyon_Lumber</li>
                       </researchPrerequisites> 
                    </value>
                   </match>
@@ -60,7 +65,8 @@
                     <xpath>/Defs/ThingDef[defName="sbz_Pallet"]</xpath>
                     <value>
                       <researchPrerequisites Inherit="false">
-                        <li>Ferny_Pallets</li>
+                        <li>Ferny_Shelves</li>
+                        <li MayRequire="dankpyon.medieval.overhaul">DankPyon_Lumber</li>
                       </researchPrerequisites> 
                     </value>
                   </nomatch>
@@ -73,7 +79,7 @@
                     <xpath>/Defs/ThingDef[defName="sbz_Safe"]/researchPrerequisites</xpath>
                     <value>
                       <researchPrerequisites Inherit="false">
-                        <li>Ferny_Safe</li>
+                        <li>Machining</li>
                       </researchPrerequisites>
                     </value>
                   </match>
@@ -81,7 +87,7 @@
                     <xpath>/Defs/ThingDef[defName="sbz_Safe"]</xpath>
                     <value>
                       <researchPrerequisites Inherit="false">
-                        <li>Ferny_Safe</li>
+                        <li>Machining</li>
                       </researchPrerequisites>
                     </value>
                   </nomatch>
@@ -288,7 +294,8 @@
 			<xpath>Defs/ThingDef[defName="sbz_Drum"]/researchPrerequisites</xpath>
 			<value>
 				<researchPrerequisites Inherit="false">
-					<li>Ferny_Drum</li>
+					<li>Machining</li>
+					<li MayRequire="reel.expanded.storage">ReelIndustrialStorage</li>
 				</researchPrerequisites>
 			</value>
 		</match>
@@ -296,7 +303,8 @@
 			<xpath>Defs/ThingDef[defName="sbz_Drum"]</xpath>
 			<value>
 				<researchPrerequisites Inherit="false">
-					<li>Ferny_Drum</li>
+					<li>Machining</li>
+					<li MayRequire="reel.expanded.storage">ReelIndustrialStorage</li>
 				</researchPrerequisites>
 			</value>
 		</nomatch>

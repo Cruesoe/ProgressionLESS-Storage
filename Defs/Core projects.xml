@@ -3,8 +3,8 @@
   
 	<ResearchProjectDef>
 		<defName>Ferny_Shelves</defName>
-		<label>Shelves</label>
-		<description>Build shelves to store items.</description>
+		<label>Basic storage</label>
+		<description>Build shelves, pallets, racks, baskets and other simple storage.</description>
 		<baseCost>400</baseCost>
 		<techLevel>Neolithic</techLevel>
 		<researchViewX>24.00</researchViewX>
@@ -13,7 +13,7 @@
 			<li>ClassicStart</li>
 		</tags>
 		<prerequisites>
-			<li MayRequire="sbz.neatstorage">Ferny_Pallets</li>
+			<li MayRequire="sbz.neatstorage,dankpyon.medieval.overhaul">DankPyon_Lumber</li>
 		</prerequisites>
 	</ResearchProjectDef>
 

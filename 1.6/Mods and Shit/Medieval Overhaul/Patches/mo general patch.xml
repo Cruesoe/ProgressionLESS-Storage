@@ -26,7 +26,7 @@
             <xpath>/Defs/ThingDef[defName="DankPyon_RusticChest"]/researchPrerequisites</xpath>
             <value>
                 <researchPrerequisites Inherit="false">
-                    <li>Ferny_Chest</li>
+                    <li>Ferny_Boxes</li>
                 </researchPrerequisites>
             </value>
         </match>
@@ -34,7 +34,7 @@
             <xpath>/Defs/ThingDef[defName="DankPyon_RusticChest"]</xpath>
             <value>
                 <researchPrerequisites Inherit="false">
-                    <li>Ferny_Chest</li>
+                    <li>Ferny_Boxes</li>
                 </researchPrerequisites>
             </value>
         </nomatch>
@@ -47,7 +47,8 @@
             <xpath>/Defs/ThingDef[defName="DankPyon_MetalStrongbox"]/researchPrerequisites</xpath>
             <value>
                 <researchPrerequisites Inherit="false">
-                    <li>Ferny_Strongbox</li>
+                    <li>Ferny_Boxes</li>
+                    <li>Smithing</li>
                 </researchPrerequisites>
             </value>
         </match>
@@ -55,7 +56,8 @@
             <xpath>/Defs/ThingDef[defName="DankPyon_MetalStrongbox"]</xpath>
             <value>
                 <researchPrerequisites Inherit="false">
-                    <li>Ferny_Strongbox</li>
+                    <li>Ferny_Boxes</li>
+                    <li>Smithing</li>
                 </researchPrerequisites>
             </value>
         </nomatch>
@@ -68,7 +70,8 @@
             <xpath>/Defs/ThingDef[defName="DankPyon_RoyalChest"]/researchPrerequisites</xpath>
             <value>
                 <researchPrerequisites Inherit="false">
-                    <li>Ferny_RoyalChest</li>
+                    <li>Ferny_Boxes</li>
+                    <li>Smithing</li>
                 </researchPrerequisites>
             </value>
         </match>
@@ -76,7 +79,8 @@
             <xpath>/Defs/ThingDef[defName="DankPyon_RoyalChest"]</xpath>
             <value>
                 <researchPrerequisites Inherit="false">
-                    <li>Ferny_RoyalChest</li>
+                    <li>Ferny_Boxes</li>
+                    <li>Smithing</li>
                 </researchPrerequisites>
             </value>
         </nomatch>
@@ -164,7 +168,7 @@
             <xpath>/Defs/ThingDef[defName="DankPyon_RusticBarrelClosed"]/researchPrerequisites</xpath>
             <value>
                 <researchPrerequisites Inherit="false">
-                    <li>Ferny_Barrels</li>
+                    <li>Ferny_Boxes</li>
                 </researchPrerequisites>
             </value>
         </match>
@@ -172,7 +176,7 @@
             <xpath>/Defs/ThingDef[defName="DankPyon_RusticBarrelClosed"]</xpath>
             <value>
                 <researchPrerequisites Inherit="false">
-                    <li>Ferny_Barrels</li>
+                    <li>Ferny_Boxes</li>
                 </researchPrerequisites>
             </value>
         </nomatch>
@@ -185,7 +189,7 @@
             <xpath>/Defs/ThingDef[defName="DankPyon_RusticBarrelBigClosed"]/researchPrerequisites</xpath>
             <value>
                 <researchPrerequisites Inherit="false">
-                    <li>Ferny_Barrels</li>
+                    <li>Ferny_Boxes</li>
                 </researchPrerequisites>
             </value>
         </match>
@@ -193,7 +197,7 @@
             <xpath>/Defs/ThingDef[defName="DankPyon_RusticBarrelBigClosed"]</xpath>
             <value>
                 <researchPrerequisites Inherit="false">
-                    <li>Ferny_Barrels</li>
+                    <li>Ferny_Boxes</li>
                 </researchPrerequisites>
             </value>
         </nomatch>
@@ -206,7 +210,7 @@
             <xpath>/Defs/ThingDef[defName="DankPyon_RusticBarrelBigClosedDown"]/researchPrerequisites</xpath>
             <value>
                 <researchPrerequisites Inherit="false">
-                    <li>Ferny_Barrels</li>
+                    <li>Ferny_Boxes</li>
                 </researchPrerequisites>
             </value>
         </match>
@@ -214,7 +218,7 @@
             <xpath>/Defs/ThingDef[defName="DankPyon_RusticBarrelBigClosedDown"]</xpath>
             <value>
                 <researchPrerequisites Inherit="false">
-                    <li>Ferny_Barrels</li>
+                    <li>Ferny_Boxes</li>
                 </researchPrerequisites>
             </value>
         </nomatch>
@@ -227,7 +231,7 @@
             <xpath>/Defs/ThingDef[defName="DankPyon_RusticBarrelStack"]/researchPrerequisites</xpath>
             <value>
                 <researchPrerequisites Inherit="false">
-                    <li>Ferny_Barrels</li>
+                    <li>Ferny_Boxes</li>
                 </researchPrerequisites>
             </value>
         </match>
@@ -235,7 +239,7 @@
             <xpath>/Defs/ThingDef[defName="DankPyon_RusticBarrelStack"]</xpath>
             <value>
                 <researchPrerequisites Inherit="false">
-                    <li>Ferny_Barrels</li>
+                    <li>Ferny_Boxes</li>
                 </researchPrerequisites>
             </value>
         </nomatch>
@@ -1086,7 +1090,8 @@
           <xpath>Defs/ThingDef[defName="DankPyon_SackClosed"]/researchPrerequisites</xpath>
           <value>
             <researchPrerequisites Inherit="false">
-              <li>Ferny_Sacks</li>
+              <li>Ferny_Shelves</li>
+              <li MayRequire="dankpyon.medieval.overhaul">DankPyon_TextileSpinning</li>
             </researchPrerequisites>
           </value>
         </match>
@@ -1094,7 +1099,8 @@
           <xpath>Defs/ThingDef[defName="DankPyon_SackClosed"]</xpath>
           <value>
             <researchPrerequisites Inherit="false">
-              <li>Ferny_Sacks</li>
+              <li>Ferny_Shelves</li>
+              <li MayRequire="dankpyon.medieval.overhaul">DankPyon_TextileSpinning</li>
             </researchPrerequisites>
           </value>
         </nomatch>
@@ -1106,7 +1112,8 @@
           <xpath>Defs/ThingDef[defName="DankPyon_BundledSack1x1c"]/researchPrerequisites</xpath>
           <value>
             <researchPrerequisites Inherit="false">
-              <li>Ferny_Sacks</li>
+              <li>Ferny_Shelves</li>
+              <li MayRequire="dankpyon.medieval.overhaul">DankPyon_TextileSpinning</li>
             </researchPrerequisites>
           </value>
         </match>
@@ -1114,7 +1121,8 @@
           <xpath>Defs/ThingDef[defName="DankPyon_BundledSack1x1c"]</xpath>
           <value>
             <researchPrerequisites Inherit="false">
-              <li>Ferny_Sacks</li>
+              <li>Ferny_Shelves</li>
+              <li MayRequire="dankpyon.medieval.overhaul">DankPyon_TextileSpinning</li>
             </researchPrerequisites>
           </value>
         </nomatch>
@@ -1126,7 +1134,8 @@
           <xpath>Defs/ThingDef[defName="DankPyon_BundledSack2x2c"]/researchPrerequisites</xpath>
           <value>
             <researchPrerequisites Inherit="false">
-              <li>Ferny_Sacks</li>
+              <li>Ferny_Shelves</li>
+              <li MayRequire="dankpyon.medieval.overhaul">DankPyon_TextileSpinning</li>
             </researchPrerequisites>
           </value>
         </match>
@@ -1134,7 +1143,8 @@
           <xpath>Defs/ThingDef[defName="DankPyon_BundledSack2x2c"]</xpath>
           <value>
             <researchPrerequisites Inherit="false">
-              <li>Ferny_Sacks</li>
+              <li>Ferny_Shelves</li>
+              <li MayRequire="dankpyon.medieval.overhaul">DankPyon_TextileSpinning</li>
             </researchPrerequisites>
           </value>
         </nomatch>
@@ -1147,38 +1157,38 @@
     <operations>
       <li Class="PatchOperationConditional">
         <xpath>Defs/ThingDef[defName="DankPyon_Bale1x2c"]/researchPrerequisites</xpath>
-        <match Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="DankPyon_Bale1x2c"]/researchPrerequisites</xpath><value><researchPrerequisites Inherit="false"><li>Ferny_Bales</li></researchPrerequisites></value></match>
-        <nomatch Class="PatchOperationAdd"><xpath>Defs/ThingDef[defName="DankPyon_Bale1x2c"]</xpath><value><researchPrerequisites Inherit="false"><li>Ferny_Bales</li></researchPrerequisites></value></nomatch>
+        <match Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="DankPyon_Bale1x2c"]/researchPrerequisites</xpath><value><researchPrerequisites Inherit="false"><li>Ferny_Shelves</li><li MayRequire="oskarpotocki.vfe.tribals">VFET_Agriculture</li></researchPrerequisites></value></match>
+        <nomatch Class="PatchOperationAdd"><xpath>Defs/ThingDef[defName="DankPyon_Bale1x2c"]</xpath><value><researchPrerequisites Inherit="false"><li>Ferny_Shelves</li><li MayRequire="oskarpotocki.vfe.tribals">VFET_Agriculture</li></researchPrerequisites></value></nomatch>
       </li>
       <li Class="PatchOperationConditional">
         <xpath>Defs/ThingDef[defName="DankPyon_HayBale2x2c"]/researchPrerequisites</xpath>
-        <match Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="DankPyon_HayBale2x2c"]/researchPrerequisites</xpath><value><researchPrerequisites Inherit="false"><li>Ferny_Bales</li></researchPrerequisites></value></match>
-        <nomatch Class="PatchOperationAdd"><xpath>Defs/ThingDef[defName="DankPyon_HayBale2x2c"]</xpath><value><researchPrerequisites Inherit="false"><li>Ferny_Bales</li></researchPrerequisites></value></nomatch>
+        <match Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="DankPyon_HayBale2x2c"]/researchPrerequisites</xpath><value><researchPrerequisites Inherit="false"><li>Ferny_Shelves</li><li MayRequire="oskarpotocki.vfe.tribals">VFET_Agriculture</li></researchPrerequisites></value></match>
+        <nomatch Class="PatchOperationAdd"><xpath>Defs/ThingDef[defName="DankPyon_HayBale2x2c"]</xpath><value><researchPrerequisites Inherit="false"><li>Ferny_Shelves</li><li MayRequire="oskarpotocki.vfe.tribals">VFET_Agriculture</li></researchPrerequisites></value></nomatch>
       </li>
       <li Class="PatchOperationConditional">
         <xpath>Defs/ThingDef[defName="DankPyon_StrawBale1x2c"]/researchPrerequisites</xpath>
-        <match Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="DankPyon_StrawBale1x2c"]/researchPrerequisites</xpath><value><researchPrerequisites Inherit="false"><li>Ferny_Bales</li></researchPrerequisites></value></match>
-        <nomatch Class="PatchOperationAdd"><xpath>Defs/ThingDef[defName="DankPyon_StrawBale1x2c"]</xpath><value><researchPrerequisites Inherit="false"><li>Ferny_Bales</li></researchPrerequisites></value></nomatch>
+        <match Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="DankPyon_StrawBale1x2c"]/researchPrerequisites</xpath><value><researchPrerequisites Inherit="false"><li>Ferny_Shelves</li><li MayRequire="oskarpotocki.vfe.tribals">VFET_Agriculture</li></researchPrerequisites></value></match>
+        <nomatch Class="PatchOperationAdd"><xpath>Defs/ThingDef[defName="DankPyon_StrawBale1x2c"]</xpath><value><researchPrerequisites Inherit="false"><li>Ferny_Shelves</li><li MayRequire="oskarpotocki.vfe.tribals">VFET_Agriculture</li></researchPrerequisites></value></nomatch>
       </li>
       <li Class="PatchOperationConditional">
         <xpath>Defs/ThingDef[defName="DankPyon_StrawBale2x2c"]/researchPrerequisites</xpath>
-        <match Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="DankPyon_StrawBale2x2c"]/researchPrerequisites</xpath><value><researchPrerequisites Inherit="false"><li>Ferny_Bales</li></researchPrerequisites></value></match>
-        <nomatch Class="PatchOperationAdd"><xpath>Defs/ThingDef[defName="DankPyon_StrawBale2x2c"]</xpath><value><researchPrerequisites Inherit="false"><li>Ferny_Bales</li></researchPrerequisites></value></nomatch>
+        <match Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="DankPyon_StrawBale2x2c"]/researchPrerequisites</xpath><value><researchPrerequisites Inherit="false"><li>Ferny_Shelves</li><li MayRequire="oskarpotocki.vfe.tribals">VFET_Agriculture</li></researchPrerequisites></value></match>
+        <nomatch Class="PatchOperationAdd"><xpath>Defs/ThingDef[defName="DankPyon_StrawBale2x2c"]</xpath><value><researchPrerequisites Inherit="false"><li>Ferny_Shelves</li><li MayRequire="oskarpotocki.vfe.tribals">VFET_Agriculture</li></researchPrerequisites></value></nomatch>
       </li>
       <li Class="PatchOperationConditional">
         <xpath>Defs/ThingDef[defName="DankPyon_FlaxBale1x2c"]/researchPrerequisites</xpath>
-        <match Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="DankPyon_FlaxBale1x2c"]/researchPrerequisites</xpath><value><researchPrerequisites Inherit="false"><li>Ferny_Bales</li></researchPrerequisites></value></match>
-        <nomatch Class="PatchOperationAdd"><xpath>Defs/ThingDef[defName="DankPyon_FlaxBale1x2c"]</xpath><value><researchPrerequisites Inherit="false"><li>Ferny_Bales</li></researchPrerequisites></value></nomatch>
+        <match Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="DankPyon_FlaxBale1x2c"]/researchPrerequisites</xpath><value><researchPrerequisites Inherit="false"><li>Ferny_Shelves</li><li MayRequire="oskarpotocki.vfe.tribals">VFET_Agriculture</li></researchPrerequisites></value></match>
+        <nomatch Class="PatchOperationAdd"><xpath>Defs/ThingDef[defName="DankPyon_FlaxBale1x2c"]</xpath><value><researchPrerequisites Inherit="false"><li>Ferny_Shelves</li><li MayRequire="oskarpotocki.vfe.tribals">VFET_Agriculture</li></researchPrerequisites></value></nomatch>
       </li>
       <li Class="PatchOperationConditional">
         <xpath>Defs/ThingDef[defName="DankPyon_FlaxBale2x2c"]/researchPrerequisites</xpath>
-        <match Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="DankPyon_FlaxBale2x2c"]/researchPrerequisites</xpath><value><researchPrerequisites Inherit="false"><li>Ferny_Bales</li></researchPrerequisites></value></match>
-        <nomatch Class="PatchOperationAdd"><xpath>Defs/ThingDef[defName="DankPyon_FlaxBale2x2c"]</xpath><value><researchPrerequisites Inherit="false"><li>Ferny_Bales</li></researchPrerequisites></value></nomatch>
+        <match Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="DankPyon_FlaxBale2x2c"]/researchPrerequisites</xpath><value><researchPrerequisites Inherit="false"><li>Ferny_Shelves</li><li MayRequire="oskarpotocki.vfe.tribals">VFET_Agriculture</li></researchPrerequisites></value></match>
+        <nomatch Class="PatchOperationAdd"><xpath>Defs/ThingDef[defName="DankPyon_FlaxBale2x2c"]</xpath><value><researchPrerequisites Inherit="false"><li>Ferny_Shelves</li><li MayRequire="oskarpotocki.vfe.tribals">VFET_Agriculture</li></researchPrerequisites></value></nomatch>
       </li>
       <li Class="PatchOperationConditional">
         <xpath>Defs/ThingDef[defName="DankPyon_RackMixed"]/researchPrerequisites</xpath>
-        <match Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="DankPyon_RackMixed"]/researchPrerequisites</xpath><value><researchPrerequisites Inherit="false"><li>Ferny_WeaponRack</li></researchPrerequisites></value></match>
-        <nomatch Class="PatchOperationAdd"><xpath>Defs/ThingDef[defName="DankPyon_RackMixed"]</xpath><value><researchPrerequisites Inherit="false"><li>Ferny_WeaponRack</li></researchPrerequisites></value></nomatch>
+        <match Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="DankPyon_RackMixed"]/researchPrerequisites</xpath><value><researchPrerequisites Inherit="false"><li>Ferny_Shelves</li></researchPrerequisites></value></match>
+        <nomatch Class="PatchOperationAdd"><xpath>Defs/ThingDef[defName="DankPyon_RackMixed"]</xpath><value><researchPrerequisites Inherit="false"><li>Ferny_Shelves</li></researchPrerequisites></value></nomatch>
       </li>
     </operations>
   </Operation>

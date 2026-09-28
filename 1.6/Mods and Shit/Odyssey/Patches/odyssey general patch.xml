@@ -7,7 +7,8 @@
 			<xpath>Defs/ThingDef[defName="Building_OutfitStand"]/researchPrerequisites</xpath>
 			<value>
 				<researchPrerequisites Inherit="false">
-					<li>Ferny_OutfitStands</li>
+					<li>Ferny_Shelves</li>
+					<li MayRequire="oskarpotocki.vfe.tribals">VFET_Furniture</li>
 				</researchPrerequisites>
 			</value>
 		</match>
@@ -15,7 +16,8 @@
 			<xpath>Defs/ThingDef[defName="Building_OutfitStand"]</xpath>
 			<value>
 				<researchPrerequisites Inherit="false">
-					<li>Ferny_OutfitStands</li>
+					<li>Ferny_Shelves</li>
+					<li MayRequire="oskarpotocki.vfe.tribals">VFET_Furniture</li>
 				</researchPrerequisites>
 			</value>
 		</nomatch>
@@ -31,7 +33,8 @@
 				<xpath>Defs/ThingDef[defName="Building_KidOutfitStand"]/researchPrerequisites</xpath>
 				<value>
 					<researchPrerequisites Inherit="false">
-						<li>Ferny_OutfitStands</li>
+						<li>Ferny_Shelves</li>
+						<li MayRequire="oskarpotocki.vfe.tribals">VFET_Furniture</li>
 					</researchPrerequisites>
 				</value>
 			</match>
@@ -39,7 +42,8 @@
 				<xpath>Defs/ThingDef[defName="Building_KidOutfitStand"]</xpath>
 				<value>
 					<researchPrerequisites Inherit="false">
-						<li>Ferny_OutfitStands</li>
+						<li>Ferny_Shelves</li>
+						<li MayRequire="oskarpotocki.vfe.tribals">VFET_Furniture</li>
 					</researchPrerequisites>
 				</value>
 			</nomatch>
