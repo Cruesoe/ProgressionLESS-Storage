@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
   
 	<ResearchProjectDef>
@@ -7,8 +7,8 @@
 		<description>Build shelves, pallets, racks, baskets and other simple storage.</description>
 		<baseCost>400</baseCost>
 		<techLevel>Neolithic</techLevel>
-		<researchViewX>1.00</researchViewX>
-		<researchViewY>5.60</researchViewY>
+		<researchViewX>0.00</researchViewX>
+		<researchViewY>10.30</researchViewY>
 		<tags>
 			<li>ClassicStart</li>
 		</tags>

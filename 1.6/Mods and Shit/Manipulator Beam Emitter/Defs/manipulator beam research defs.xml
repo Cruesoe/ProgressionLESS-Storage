@@ -7,8 +7,8 @@
 		<baseCost>80000</baseCost>
 		<tab>Main</tab>
 		<techLevel>Ultra</techLevel>
-		<researchViewX>20</researchViewX>
-		<researchViewY>6</researchViewY>
+		<researchViewX>20.00</researchViewX>
+		<researchViewY>6.00</researchViewY>
 		<prerequisites>
 			<li>AdvancedFabrication</li>
 		</prerequisites>

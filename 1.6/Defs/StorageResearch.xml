@@ -8,8 +8,8 @@
 		<baseCost>400</baseCost>
 		<tab>Main</tab>
 		<techLevel>Medieval</techLevel>
-		<researchViewX>15.00</researchViewX>
-		<researchViewY>6.00</researchViewY>
+		<researchViewX>1.00</researchViewX>
+		<researchViewY>10.30</researchViewY>
 		<prerequisites>
 			<li MayRequire="sbz.neatstorage">Ferny_Shelves</li>
 		</prerequisites>
