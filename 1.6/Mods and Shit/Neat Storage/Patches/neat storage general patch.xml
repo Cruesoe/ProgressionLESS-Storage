@@ -212,14 +212,6 @@
                             </researchPrerequisites>
                         </value>
                     </li>
-                    <li Class="PatchOperationReplace">
-                        <xpath>Defs/ThingDef[@Name="sbzSmallDisplayShelfBase"]/researchPrerequisites</xpath>
-                        <value>
-                            <researchPrerequisites>
-                                <li>Ferny_Shelves</li>
-                            </researchPrerequisites>
-                        </value>
-                    </li>
 
                     <li Class="PatchOperationAdd">
                         <xpath>Defs/ThingDef[@Name="sbzWeaponRackBase"]</xpath>
@@ -269,14 +261,6 @@
                     </li>
                     <li Class="PatchOperationReplace">
                         <xpath>Defs/ThingDef[@Name="sbzDisplayShelfBase"]/researchPrerequisites</xpath>
-                        <value>
-                            <researchPrerequisites>
-                                <li>Ferny_Shelves</li>
-                            </researchPrerequisites>
-                        </value>
-                    </li>
-                    <li Class="PatchOperationReplace">
-                        <xpath>Defs/ThingDef[@Name="sbzSmallDisplayShelfBase"]/researchPrerequisites</xpath>
                         <value>
                             <researchPrerequisites>
                                 <li>Ferny_Shelves</li>

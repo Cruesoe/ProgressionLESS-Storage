@@ -17,14 +17,6 @@
 			</researchPrerequisites>
 		</value>
 	</Operation>
-	<Operation Class="PatchOperationReplace">
-		<xpath>Defs/ThingDef[@Name="sbzSmallDisplayShelfBase"]/researchPrerequisites</xpath>
-		<value>
-			<researchPrerequisites>
-				<li>Ferny_Shelves</li>
-			</researchPrerequisites>
-		</value>
-	</Operation>
 	<!-- Crate base: 6 to 8 stacks/tile -->
 	<!-- Original maxItemsInCell: 6 -->
 	<Operation Class="PatchOperationReplace">
