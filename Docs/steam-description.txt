@@ -1,0 +1,40 @@
+[h1]ProgressionLESS: Storage[/h1]
+[b]All the Progression goodness, less research.[/b]
+
+[i]This is a fork of [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3292746186]Progression: Storage[/url] by ferny. Huge thanks to ferny for the original mod and all the Progression work this builds on. For a really good modpack, check out [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3521297585]The Progression Modpack[/url].[/i]
+
+[h2]What it does[/h2]
+[list]
+[*]Integrates storage mods into vanilla progression, so each storage building unlocks in its proper tech era.
+[*]Rebalances storage capacity and descriptions across the supported storage mods.
+[*]Hides duplicate storage buildings when several storage mods overlap.
+[/list]
+
+[h2]Why "LESS"?[/h2]
+Progression: Storage adds up to [b]22 research projects[/b] depending on your storage mods. This fork cuts that to [b]at most 4[/b], one per era:
+[list]
+[*][b]Basic storage[/b] (Neolithic): shelves, pallets, racks, baskets, sacks, bales and other simple storage.
+[*][b]Crates and chests[/b] (Medieval): crates, barrels, chests, strongboxes and meat hooks.
+[*][b]Display pod[/b] (Spacer)
+[*][b]Manipulator beam emitter[/b] (Ultra)
+[/list]
+Industrial storage (drums, safes, fridges) uses the vanilla research it already builds on: Machining and Air conditioning.
+
+Every building stays in the same era, and still needs any other research it did before.
+
+[h2]Compatibility[/h2]
+Keeps all of the original's mod support:
+[list]
+[*]Medieval Overhaul, plus its adaptive storage addon
+[*]Reel's Expanded Storage
+[*]Neat Storage, Neat Storage Fridge and SBZ Bookcase
+[*]Gravship Storage and Cargo Holds
+[*]Adaptive Primitive Storage
+[*]Vanilla Furniture Expanded, VFE Art, VFE Spacer, VFE Mechanoids, VFE Medieval 2 and VE Recycling
+[*]Ponpeco Furnitures Sci-Fi (with ReBuild: Doors and Corners)
+[*]Manipulator Beam Emitter
+[*]Vending Machines, Pass It Through the Window and Alpha Books
+[*]Odyssey
+[/list]
+
+[b]Replaces the original. Don't use both.[/b]
