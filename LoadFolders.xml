@@ -2,6 +2,7 @@
   <v1.6>
     <li>/</li>
     <li>1.6</li>
+    <li IfModActiveAll="sbz.neatstorage,dankpyon.medieval.overhaul">1.6/Mods/NeatStorageMedievalOverhaul</li>
     <li IfModActive="dankpyon.medieval.overhaul">1.6/Mods and Shit/Medieval Overhaul</li>
     <li IfModActive="vanillaexpanded.recycling">1.6/Mods and Shit/VE Recycling</li>
     <li IfModActive="VanillaExpanded.VFECore">1.6/Mods and Shit/VE Furniture</li>

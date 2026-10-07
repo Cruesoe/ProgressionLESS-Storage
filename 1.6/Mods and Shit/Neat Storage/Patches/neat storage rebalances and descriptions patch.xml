@@ -192,29 +192,6 @@
 			</building>
 		</value>
 	</Operation>
-	<!-- Safe: only metallic-category items -->
-	<Operation Class="PatchOperationReplace">
-		<xpath>Defs/ThingDef[defName="sbz_Safe"]/building/fixedStorageSettings/filter</xpath>
-		<value>
-			<filter>
-				<disallowNotEverStorable>true</disallowNotEverStorable>
-				<categories Inherit="False">
-					<li MayRequire="DankPyon.Medieval.Overhaul">DankPyon_Metallic</li>
-				</categories>
-			</filter>
-		</value>
-	</Operation>
-	<Operation Class="PatchOperationReplace">
-		<xpath>Defs/ThingDef[defName="sbz_Safe"]/building/defaultStorageSettings/filter</xpath>
-		<value>
-			<filter>
-				<disallowNotEverStorable>true</disallowNotEverStorable>
-				<categories Inherit="False">
-					<li MayRequire="DankPyon.Medieval.Overhaul">DankPyon_Metallic</li>
-				</categories>
-			</filter>
-		</value>
-	</Operation>
 	<!-- Drum: restrict to ResourcesRaw, Foods -->
 	<Operation Class="PatchOperationReplace">
 		<xpath>Defs/ThingDef[defName="sbz_Drum"]/building/fixedStorageSettings/filter</xpath>

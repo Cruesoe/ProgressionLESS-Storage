@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="sbz_Safe"]/building/fixedStorageSettings/filter</xpath>
+    <value>
+      <filter>
+        <disallowNotEverStorable>true</disallowNotEverStorable>
+        <categories Inherit="False">
+          <li>DankPyon_Metallic</li>
+        </categories>
+      </filter>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="sbz_Safe"]/building/defaultStorageSettings/filter</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="sbz_Safe"]/building/defaultStorageSettings/filter</xpath>
+      <value>
+        <filter>
+          <disallowNotEverStorable>true</disallowNotEverStorable>
+          <categories Inherit="False">
+            <li>DankPyon_Metallic</li>
+          </categories>
+        </filter>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="sbz_Safe"]/building/defaultStorageSettings</xpath>
+      <value>
+        <filter>
+          <disallowNotEverStorable>true</disallowNotEverStorable>
+          <categories Inherit="False">
+            <li>DankPyon_Metallic</li>
+          </categories>
+        </filter>
+      </value>
+    </nomatch>
+  </Operation>
+</Patch>
