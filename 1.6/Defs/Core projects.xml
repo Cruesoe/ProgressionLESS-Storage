@@ -7,8 +7,8 @@
 		<description>Build shelves, pallets, racks, baskets and other simple storage.</description>
 		<baseCost>400</baseCost>
 		<techLevel>Neolithic</techLevel>
-		<researchViewX>0.00</researchViewX>
-		<researchViewY>10.30</researchViewY>
+		<researchViewX>22.00</researchViewX>
+		<researchViewY>4.90</researchViewY>
 		<tags>
 			<li>ClassicStart</li>
 		</tags>
