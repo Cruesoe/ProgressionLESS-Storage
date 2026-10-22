@@ -14,6 +14,7 @@
 		</tags>
 		<prerequisites>
 			<li MayRequire="sbz.neatstorage,dankpyon.medieval.overhaul">DankPyon_Lumber</li>
+			<li MayRequireAnyOf="cruesoe.progressionlessfurniture,ferny.progressionfurniture">Ferny_Column</li>
 		</prerequisites>
 	</ResearchProjectDef>
 
