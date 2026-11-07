@@ -23,11 +23,5 @@
                         <terrainAffordanceNeeded>Substructure</terrainAffordanceNeeded>
                     </value>
                 </Operation>
-                <Operation Class="PatchOperationAdd">
-                    <xpath>Defs/ThingDef[defName="sbz_GravshipWeaponRack"]</xpath>
-                    <value>
-                        <terrainAffordanceNeeded>Substructure</terrainAffordanceNeeded>
-                    </value>
-                </Operation>
 
 </Patch>
