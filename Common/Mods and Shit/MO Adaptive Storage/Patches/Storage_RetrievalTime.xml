@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[starts-with(defName, "EEG_JunkPile")]/statBases</xpath>
+    <value>
+      <Ferny_RetrievalTime>60</Ferny_RetrievalTime>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[starts-with(defName, "EEG_CorpsePile")]/statBases</xpath>
+    <value>
+      <Ferny_RetrievalTime>30</Ferny_RetrievalTime>
+    </value>
+  </Operation>
+  <!-- Corpse piles only hold corpses, so they scale by fill level instead of item variety -->
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[starts-with(defName, "EEG_CorpsePile")]</xpath>
+    <value>
+      <li Class="ProgressionLESSStorage.RetrievalTimeExtension">
+        <scaleByUniqueItems>false</scaleByUniqueItems>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[starts-with(defName, "EEG_JunkPile") or starts-with(defName, "EEG_CorpsePile")]/statBases/Beauty</xpath>
+    <value>
+      <Beauty>-10</Beauty>
+    </value>
+  </Operation>
+</Patch>

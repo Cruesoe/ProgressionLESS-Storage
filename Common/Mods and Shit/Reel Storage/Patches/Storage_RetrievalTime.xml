@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="ReelStorageLargeMetalCrate" or defName="ReelStorageNewLargeWoodCrate"]/statBases</xpath>
+    <value>
+      <Ferny_RetrievalTime>15</Ferny_RetrievalTime>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="ReelStorageMetalCrate" or defName="ReelStorageNewWoodCrate"]/statBases</xpath>
+    <value>
+      <Ferny_RetrievalTime>5</Ferny_RetrievalTime>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <success>Always</success>
+    <xpath>Defs/ThingDef[defName="ReelStorageCargoContainer"]/statBases</xpath>
+    <value>
+      <Ferny_RetrievalTime>50</Ferny_RetrievalTime>
+    </value>
+  </Operation>
+</Patch>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <Ferny_Retrieving>Retrieving {0}...</Ferny_Retrieving>
+  <Ferny_DisableRetrievalTime>Disable retrieval time</Ferny_DisableRetrievalTime>
+  <Ferny_DisableRetrievalTimeDesc>Items are taken out of every storage building instantly, ignoring the retrieval time stat.</Ferny_DisableRetrievalTimeDesc>
+</LanguageData>

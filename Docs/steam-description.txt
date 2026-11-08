@@ -7,6 +7,7 @@
 [*]Integrates storage mods into vanilla progression, so each storage building unlocks in its proper tech era.
 [*]Rebalances storage capacity and descriptions across the supported storage mods.
 [*]Hides duplicate storage buildings when several storage mods overlap.
+[*]Adds a retrieval time to some storage: pawns take longer to get items out of storage that holds many different kinds of item, and longer still with poor manipulation or sight. It can be turned off in the mod settings.
 [/list]
 
 [h2]Why "LESS"?[/h2]
@@ -34,6 +35,7 @@ Keeps all of the original's mod support:
 [*]Manipulator Beam Emitter
 [*]Vending Machines, Pass It Through the Window and Alpha Books
 [*]Odyssey
+[*]Perspective Shift: Keep and Hold in its storage menu wait for the retrieval time
 [/list]
 
 [b]Replaces the original. Don't use both.[/b]
