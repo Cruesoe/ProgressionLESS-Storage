@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="sbz_TallCrate"]/statBases</xpath>
+    <value>
+      <Ferny_RetrievalTime>15</Ferny_RetrievalTime>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="sbz_MidCrate"]/statBases</xpath>
+    <value>
+      <Ferny_RetrievalTime>7</Ferny_RetrievalTime>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="sbz_HalfPallet"]/statBases</xpath>
+    <value>
+      <Ferny_RetrievalTime>5</Ferny_RetrievalTime>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="sbz_Pallet"]/statBases</xpath>
+    <value>
+      <Ferny_RetrievalTime>8</Ferny_RetrievalTime>
+    </value>
+  </Operation>
+</Patch>

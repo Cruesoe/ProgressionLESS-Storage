@@ -2,6 +2,7 @@
   <v1.6>
     <li>/</li>
     <li>Common</li>
+    <li>1.6</li>
     <li IfModActiveAll="sbz.neatstorage,dankpyon.medieval.overhaul">Common/Mods/NeatStorageMedievalOverhaul</li>
     <li IfModActive="dankpyon.medieval.overhaul">Common/Mods and Shit/Medieval Overhaul</li>
     <li IfModActive="vanillaexpanded.recycling">Common/Mods and Shit/VE Recycling</li>
@@ -36,6 +37,7 @@
   <v1.7>
     <li>/</li>
     <li>Common</li>
+    <li>1.7</li>
     <li IfModActiveAll="sbz.neatstorage,dankpyon.medieval.overhaul">Common/Mods/NeatStorageMedievalOverhaul</li>
     <li IfModActive="dankpyon.medieval.overhaul">Common/Mods and Shit/Medieval Overhaul</li>
     <li IfModActive="vanillaexpanded.recycling">Common/Mods and Shit/VE Recycling</li>

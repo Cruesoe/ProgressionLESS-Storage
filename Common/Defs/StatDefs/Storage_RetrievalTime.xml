@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <!-- Seconds to retrieve an item when every slot holds a different item; scaled by variety (see RetrievalTimeExtension). 0 = instant -->
+  <StatDef>
+    <defName>Ferny_RetrievalTime</defName>
+    <label>retrieval time</label>
+    <description>How long it takes a colonist to retrieve an item from this storage when every slot holds a different kind of item. Storage with less variety is quicker, in proportion to how many different kinds of item it holds. If zero, items are retrieved instantly.</description>
+    <category>Building</category>
+    <toStringStyle>FloatOne</toStringStyle>
+    <formatString>{0}s</formatString>
+    <defaultBaseValue>0</defaultBaseValue>
+    <minValue>0</minValue>
+    <showOnPawns>false</showOnPawns>
+    <showIfUndefined>false</showIfUndefined>
+    <displayPriorityInCategory>2000</displayPriorityInCategory>
+  </StatDef>
+</Defs>

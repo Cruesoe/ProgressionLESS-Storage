@@ -1,0 +1,7 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <RootNamespace>ProgressionLESSStorage</RootNamespace>
+    <AssemblyName>ProgressionLESSStorage</AssemblyName>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+</Project>

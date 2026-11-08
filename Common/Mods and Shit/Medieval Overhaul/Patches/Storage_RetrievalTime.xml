@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="DankPyon_RusticBarrelClosed" or defName="DankPyon_SackClosed" or defName="DankPyon_BundledSack1x1c" or defName="DankPyon_Crate1x1c"]/statBases</xpath>
+    <value>
+      <Ferny_RetrievalTime>10</Ferny_RetrievalTime>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="DankPyon_RusticBarrelStack" or defName="DankPyon_Crate1x2c"]/statBases</xpath>
+    <value>
+      <Ferny_RetrievalTime>15</Ferny_RetrievalTime>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="DankPyon_RusticBarrelBigClosed" or defName="DankPyon_RusticBarrelBigClosedDown" or defName="DankPyon_BundledSack2x2c" or defName="DankPyon_Crate2x2c"]/statBases</xpath>
+    <value>
+      <Ferny_RetrievalTime>20</Ferny_RetrievalTime>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="DankPyon_RusticChest" or defName="DankPyon_MetalStrongbox" or defName="DankPyon_RoyalChest"]/statBases</xpath>
+    <value>
+      <Ferny_RetrievalTime>2.5</Ferny_RetrievalTime>
+    </value>
+  </Operation>
+</Patch>
