@@ -17,6 +17,8 @@ namespace ProgressionLESSStorage
             public int startTick;
             public int duration;
             public Action finish = null!;
+            public string title = "";
+            public string text = "";
         }
 
         // Lifetime: the open storage menu window; entries go when the window is collected
@@ -96,7 +98,8 @@ namespace ProgressionLESSStorage
             }
 
             paid.Remove(window);
-            if (cursorField!.GetValue(window) is Thing cursor)
+            var cursor = cursorField!.GetValue(window) as Thing;
+            if (cursor != null)
             {
                 paid.Add(window, cursor);
             }
@@ -105,7 +108,9 @@ namespace ProgressionLESSStorage
             {
                 startTick = Find.TickManager.TicksGame,
                 duration = (int)(seconds * GenTicks.TicksPerRealSecond),
-                finish = finish
+                finish = finish,
+                title = storage.LabelNoParenthesisCap,
+                text = "Ferny_Retrieving".Translate(cursor?.LabelCap ?? "")
             });
             window.forcePause = false;
             return true;
@@ -192,18 +197,15 @@ namespace ProgressionLESSStorage
                 return false;
             }
 
-            var item = cursorField!.GetValue(__instance) as Thing;
-            var storage = storageField!.GetValue(__instance) as Thing;
-
             Text.Font = GameFont.Medium;
             Text.Anchor = TextAnchor.UpperCenter;
-            Widgets.Label(new Rect(inRect.x, inRect.y, inRect.width, 35f), storage?.LabelNoParenthesisCap ?? "");
+            Widgets.Label(new Rect(inRect.x, inRect.y, inRect.width, 35f), retrieval.title);
             Text.Font = GameFont.Small;
 
             var barRect = new Rect(inRect.x + 20f, inRect.center.y - 15f, inRect.width - 40f, 30f);
             Widgets.FillableBar(barRect, Mathf.Clamp01((float)elapsed / retrieval.duration));
             Text.Anchor = TextAnchor.LowerCenter;
-            Widgets.Label(new Rect(barRect.x, barRect.y - 30f, barRect.width, 28f), "Ferny_Retrieving".Translate(item?.LabelCap ?? ""));
+            Widgets.Label(new Rect(barRect.x, barRect.y - 30f, barRect.width, 28f), retrieval.text);
             Text.Anchor = TextAnchor.UpperLeft;
             return false;
         }

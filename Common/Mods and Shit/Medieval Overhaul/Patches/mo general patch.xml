@@ -805,13 +805,6 @@
                     <researchPrerequisites Inherit="false"/>
                 </value>
                 </Operation>
-
-                <Operation Class="PatchOperationAdd">
-                <xpath>Defs/ThingDef[defName="DankPyon_TableMarket_Dairy"]</xpath>
-                <value>
-                    <researchPrerequisites Inherit="false"/>
-                </value>
-                </Operation>
                 <Operation Class="PatchOperationAdd">
                 <xpath>Defs/ThingDef[defName="DankPyon_HayPile1x2c"]</xpath>
                 <value>

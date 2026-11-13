@@ -35,7 +35,7 @@ Keeps all of the original's mod support:
 [*]Manipulator Beam Emitter
 [*]Vending Machines, Pass It Through the Window and Alpha Books
 [*]Odyssey
-[*]Perspective Shift: Keep and Hold in its storage menu wait for the retrieval time
+[*]Perspective Shift: Keep, Hold, Equip and Wear in its storage menu, and closing the menu while holding an item, wait for the retrieval time
 [/list]
 
 [b]Replaces the original. Don't use both.[/b]

@@ -95,34 +95,6 @@
 			<maxItemsInCell>15</maxItemsInCell>
 		</value>
 	</Operation>
-	<!-- Pallets: restore source total capacities via 6 stacks/tile -->
-	<!-- Original maxItemsInCell: 6 (inherited from sbzCrateBase) -->
-	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/ThingDef[defName="sbz_MiniPallet"]</xpath>
-		<value>
-			<building>
-				<maxItemsInCell>6</maxItemsInCell>
-			</building>
-		</value>
-	</Operation>
-	<!-- Original maxItemsInCell: 6 (inherited from sbzCrateBase) -->
-	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/ThingDef[defName="sbz_HalfPallet"]</xpath>
-		<value>
-			<building>
-				<maxItemsInCell>6</maxItemsInCell>
-			</building>
-		</value>
-	</Operation>
-	<!-- Original maxItemsInCell: 6 (inherited from sbzCrateBase) -->
-	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/ThingDef[defName="sbz_Pallet"]</xpath>
-		<value>
-			<building>
-				<maxItemsInCell>6</maxItemsInCell>
-			</building>
-		</value>
-	</Operation>
 	<!-- Filters -->
 	<!-- Crate: Root minus Foods, FoodMeals, Corpses, Chunks -->
 	<Operation Class="PatchOperationAdd">
@@ -146,11 +118,12 @@
 			</building>
 		</value>
 	</Operation>
-	<!-- Pallets: unrestricted -->
+  <!-- Pallets: unrestricted, 6 stacks per tile (as the source's sbzCrateBase) -->
 	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/ThingDef[defName="sbz_MiniPallet"]</xpath>
 		<value>
 			<building>
+        <maxItemsInCell>6</maxItemsInCell>
 				<fixedStorageSettings>
 					<filter>
 						<disallowNotEverStorable>true</disallowNotEverStorable>
@@ -166,6 +139,7 @@
 		<xpath>Defs/ThingDef[defName="sbz_HalfPallet"]</xpath>
 		<value>
 			<building>
+        <maxItemsInCell>6</maxItemsInCell>
 				<fixedStorageSettings>
 					<filter>
 						<disallowNotEverStorable>true</disallowNotEverStorable>
@@ -181,6 +155,7 @@
 		<xpath>Defs/ThingDef[defName="sbz_Pallet"]</xpath>
 		<value>
 			<building>
+        <maxItemsInCell>6</maxItemsInCell>
 				<fixedStorageSettings>
 					<filter>
 						<disallowNotEverStorable>true</disallowNotEverStorable>
