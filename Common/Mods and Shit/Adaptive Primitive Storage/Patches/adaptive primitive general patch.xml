@@ -10,6 +10,28 @@
                     </value>
                 </Operation>
 
+<!-- WEAPON RACK: WEAPONS ONLY -->
+                <Operation Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="ASF_WeaponRack"]/building</xpath>
+                    <value>
+                        <fixedStorageSettings>
+                            <filter>
+                                <categories>
+                                    <li>Weapons</li>
+                                </categories>
+                            </filter>
+                        </fixedStorageSettings>
+                        <defaultStorageSettings>
+                            <priority>Important</priority>
+                            <filter>
+                                <categories>
+                                    <li>Weapons</li>
+                                </categories>
+                            </filter>
+                        </defaultStorageSettings>
+                    </value>
+                </Operation>
+
                 <Operation Class="PatchOperationReplace">
                     <xpath>Defs/ThingDef[defName="ASF_CoveredClayPot"]/label</xpath>
                     <value>
